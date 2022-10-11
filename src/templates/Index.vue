@@ -29,58 +29,45 @@
       <div class="container">
         <div class="columns is-multiline">
           <div class="column is-4-widescreen is-6-tablet">
-            <div class="about-item">
-              <div class="icon">
-                <b-icon
-                    icon="shield-check"
-                    size="is-large">
-                </b-icon>
-              </div>
-
-              <div class="content">
-                <h4 class="mt-3 mb-3">UX</h4>
-                <p class="mb-5">
-                  Een gebruikerservaring die aansluit bij jouw onderneming om je conversie te verhogen.
-                </p>
-                <a href="#"> Lees meer </a>
-              </div>
-            </div>
+            <ReadMoreColumn
+                icon="shield-check"
+                title="UX"
+            >
+              <template #preview>
+                Een gebruikerservaring die aansluit bij jouw onderneming om je conversie te verhogen.
+              </template>
+              <template #more>
+                TODO Meer informatie.
+              </template>
+            </ReadMoreColumn>
           </div>
 
           <div class="column is-4-widescreen is-6-tablet">
-            <div class="about-item">
-              <div class="icon">
-                <b-icon
-                    icon="brush"
-                    size="is-large">
-                </b-icon>
-              </div>
-              <div class="content">
-                <h4 class="mt-3 mb-3">Customizable</h4>
-                <p class="mb-5">
-                  Met de Vendure e-commerce engine kunnen we alles koppelen, zodat je tijd bespaart tijdens het afhandelen van bestellingen.
-                </p>
-                <a href="#"> Lees meer </a>
-              </div>
-            </div>
+            <ReadMoreColumn
+                icon="brush"
+                title="Customizable"
+            >
+              <template #preview>
+                Met de Vendure e-commerce engine kunnen we alles koppelen, zodat je tijd bespaart tijdens het afhandelen van bestellingen.
+              </template>
+              <template #more>
+                TODO Meer informatie.
+              </template>
+            </ReadMoreColumn>
           </div>
 
           <div class="column is-4-widescreen is-6-tablet">
-            <div class="about-item">
-              <div class="icon">
-                <b-icon
-                    icon="account-multiple-check"
-                    size="is-large">
-                </b-icon>
-              </div>
-              <div class="content">
-                <h4 class="mt-3 mb-3">Support</h4>
-                <p class="mb-5">
-                  We zorgen pro-actief dat er niks mis gaat. Heb je toch vragen? Dan staat er altijd iemand voor je klaar om je te helpen.
-                </p>
-                <a href="#"> Lees meer </a>
-              </div>
-            </div>
+            <ReadMoreColumn
+                icon="account-multiple-check"
+                title="Support"
+            >
+              <template #preview>
+                We zorgen pro-actief dat er niks mis gaat. Heb je toch vragen? Dan staat er altijd iemand voor je klaar om je te helpen.
+              </template>
+              <template #more>
+                TODO Meer informatie.
+              </template>
+            </ReadMoreColumn>
           </div>
         </div>
       </div>
