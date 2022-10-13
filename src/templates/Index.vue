@@ -216,6 +216,7 @@ import CountUp from "../components/CountUp";
 export default {
   components: { CountUp },
   mounted() {
+    this.width = window.innerWidth;
     this.$nextTick(() => {
       window.addEventListener('resize', () => this.width=window.innerWidth);
     })
@@ -230,7 +231,7 @@ export default {
   },
   data() {
     return {
-      width: window.innerWidth,
+      width: 1200,
       test: 0,
       reviews: [
         {
