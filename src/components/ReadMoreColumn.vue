@@ -15,7 +15,7 @@
       <p v-if="readMore">
         <slot name="more"/>
       </p>
-      <a @click="readMore = !readMore"> {{ readMore ? 'Lees minder &#9650;' : 'Lees meer' }} </a>
+      <a @click="readMore = !readMore"> {{ readMore ? 'Toon minder &#9650;' : 'Lees meer' }} </a>
     </div>
   </div>
 </template>

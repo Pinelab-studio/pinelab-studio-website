@@ -32,6 +32,8 @@ $body-background-color: $background;
 
 $button-text-hover-background-color: $text;
 
+$carousel-arrow-color: $background;
+
 $navbar-background-color: $background;
 $navbar-item-color: $text;
 $navbar-item-hover-color: $secondary;
@@ -143,13 +145,20 @@ $link-focus-border: $primary;*/
 
 .highlight {
   color: $secondary;
+  font-weight: 700;
 }
 
 .rounded {
   border-radius: 30px;
 }
 
+.bordered {
+  border: $text-light 1px solid;
+}
 
+.carousel-list {
+  box-shadow: none !important;
+}
 
 
 /* Animated CTA */

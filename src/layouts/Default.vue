@@ -16,13 +16,13 @@
           </template>
           <template #start id="navigation">
             <li class="navbar-item">
-              <g-link class="navbar-link" to="/">Services</g-link>
+              <a class="navbar-link" href="#services">Services</a>
             </li>
             <li class="navbar-item">
-              <g-link class="navbar-link" to="/">Over ons</g-link>
+              <a class="navbar-link" href="#about">Over ons</a>
             </li>
             <li class="navbar-item">
-              <g-link class="navbar-link" to="/">Tarieven</g-link>
+              <a class="navbar-link" href="#pricing">Tarieven</a>
             </li>
 
           </template>
