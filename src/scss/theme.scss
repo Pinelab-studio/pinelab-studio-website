@@ -29,10 +29,9 @@ $secondary-font: "Inter", sans-serif;
 $grad-color: linear-gradient(to bottom, #05a5f9, #10dab7);
 
 $body-background-color: $background;
-
 $button-text-hover-background-color: $text;
-
 $carousel-arrow-color: $background;
+$card-background-color: $background;
 
 $navbar-background-color: $background;
 $navbar-item-color: $text;
@@ -143,7 +142,9 @@ $link-focus-border: $primary;*/
   box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.2);
 }
 
-.highlight {
+h1 span,
+#services span,
+.card-content span {
   color: $secondary;
   font-weight: 700;
 }

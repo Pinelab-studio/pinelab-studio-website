@@ -15,7 +15,7 @@ export default {
       const step = this.value / 50;
       console.log(step);
       while (this.count <= this.value) {
-        await new Promise(resolve => setTimeout(resolve, 50));
+        await new Promise(resolve => setTimeout(resolve, 20));
         this.count = this.count+ step;
         if (this.count > this.value) {
           this.count = this.value;

@@ -1,28 +1,30 @@
 <template>
-  <div id="thuglife-overlay" class="rounded shadowed">
-    <img id="thuglife-image" src="/images/sunglasses.png" alt="Martijn van Pinelab"/>
+  <div id="thuglife-image" class="rounded shadowed">
+    <img id="thuglife-sunglasses" src="/images/sunglasses.png" alt="Martijn van Pinelab"/>
   </div>
 </template>
 <style>
-#thuglife-image {
+#thuglife-sunglasses {
+  position: relative;
+  top: -100px;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: 1s;
+  transition: top ease 2s;
 }
-#thuglife-image:hover {
-  transition: 1s;
+#thuglife-sunglasses:hover {
+  top: 5px;
   opacity: 1;
 }
 
-#thuglife-overlay {
+#thuglife-image {
   background-image: url('/images/martijn-square.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: 1s;
 }
-#thuglife-overlay:hover {
+#thuglife-image:hover {
   filter: grayscale(1);
   transition: 1s;
 }

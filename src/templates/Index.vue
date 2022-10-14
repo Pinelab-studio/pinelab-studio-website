@@ -8,7 +8,7 @@
             <div class="block">
               <span class="is-uppercase text-sm letter-spacing ">DE WEBSHOP EXPERTS</span>
               <h1 class="my-4">
-                Doeltreffend ondernemen met een <span class="highlight">professionele webshop</span>
+                Doeltreffend ondernemen met een <span>professionele webshop</span>
               </h1>
               <p class="mb-6">
                 Wij bouwen een webshop die vlekkeloos werkt, zodat jij kan focussen op het strategisch runnen van je
@@ -127,8 +127,7 @@
               </h1>
               <p class="mb-6">
                 We bouwen complete custom webshops met Vendure, inclusief hosting, onderhoud en support. Voor een
-                complete webshop kunnen we je <span
-                  class="highlight">vooraf kosteloos vertellen wat het je gaat kosten.</span>
+                complete webshop kunnen we je <span>vooraf kosteloos vertellen wat het je gaat kosten.</span>
               </p>
               <Cta link="/webshop-check/">Gratis gesprek aanvragen</Cta>
             </div>
@@ -141,11 +140,8 @@
 
         <div class="columns">
           <div class="column mb-6">
-            <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-               _target="blank">
-              <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
-                   class="rounded cover"/>
-            </a>
+            <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
+                 class="rounded cover"/>
           </div>
           <div class="column has-text-right has-text-left-mobile pl-6 mb-6">
             <div class="block">
@@ -155,9 +151,9 @@
               <p class="mb-6">
                 Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
                                                         _target="blank">
-                <span class="highlight is-underlined">Vendure Silver Partner</span>
+                <span class="is-underlined">Vendure Silver Partner</span>
               </a> kunnen we al jouw e-commerce wensen
-                realiseren. Benieuwd naar hoe wij je kunnen helpen? Vraag kosteloos een gesprek aan.
+                realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
               </p>
               <Cta link="/webshop-check/">Gratis gesprek aanvragen</Cta>
             </div>
@@ -185,19 +181,17 @@
             icon-prev="chevron-left"
             icon-next="chevron-right"
         >
-          <template #item="list">
-            <div class="rounded bordered m-4 p-4">
-              <div class="card-content">
-                De nieuwe website is <span class="highlight">10 keer sneller en stabieler</span> dan mijn oude WooCommerce website!
-              </div>
+          <template #item="review">
+            <div class="rounded bordered m-4">
+              <div class="card-content" v-html="review.message" style="min-height: 180px;"/>
             </div>
-            <div class="client-info is-flex is-align-items-center m-4">
+            <div class="client-info is-flex is-align-items-center m-4 stick-to-bottom">
               <div class="client-img image pr-4">
-                <img src="https://demo.themefisher.com/orbitor-bulma/images/team/testimonial1.jpg" alt="" class="w-100 is-rounded">
+                <img :src="review.image" alt="" class="is-rounded">
               </div>
               <div class="info">
-                <h6>Frank Wasse</h6>
-                <span>Wormenkwekerij Wasse</span>
+                <h6>{{ review.author }}</h6>
+                {{ review.company }}
               </div>
             </div>
           </template>
@@ -205,6 +199,45 @@
       </div>
     </section>
 
+    <section id="pricing" class="banner pt-0">
+      <div class="container">
+        <div class="block mb-6">
+          <h1 class="mb-4">
+            Tarieven
+          </h1>
+          <p>
+            Hieronder vind je een schatting van wat een webshop je gaat kosten. Exacte prijzen hangen af van jouw onderneming en je wensen.
+          </p>
+        </div>
+
+        <div class="columns">
+          <template v-for="pricing of pricings" >
+            <div class="column">
+              <div class="pricing-block card has-text-centered rounded bordered">
+                <div class="price-header">
+                  <span class="is-uppercase letter-spacing h5">{{ pricing.name }}</span>
+                  <h2>€{{ pricing.fixedPrice }}</h2>
+                  <h6 class="text-muted"> €{{ pricing.yearlyPrice }} jaarlijks</h6>
+                </div>
+                <div class="price-body">
+                  <ul class="list-unstyled mb-0">
+                    <li>50 gb Hosting</li>
+                    <li>Business Analysis</li>
+                    <li>24 Hours Support</li>
+                    <li>Customer Management</li>
+                  </ul>
+                </div>
+                <div class="price-footer">
+                  <Cta link="/webshop-check/">Vraag aan</Cta>
+                </div>
+              </div>
+
+            </div>
+          </template>
+        </div>
+
+      </div>
+    </section>
 
   </Layout>
 </template>
@@ -212,13 +245,14 @@
 <script>
 
 import CountUp from "../components/CountUp";
+import ThugLifeComponent from "../components/ThugLifeComponent";
 
 export default {
-  components: { CountUp },
+  components: { ThugLifeComponent, CountUp },
   mounted() {
     this.width = window.innerWidth;
     this.$nextTick(() => {
-      window.addEventListener('resize', () => this.width=window.innerWidth);
+      window.addEventListener('resize', () => this.width = window.innerWidth);
     })
   },
   computed: {
@@ -235,20 +269,49 @@ export default {
       test: 0,
       reviews: [
         {
-          title: 'Slide 1',
-          image: 'https://buefy.org/static/img/placeholder-1280x960.png',
-          rating: 4.4
+          author: 'Frank Wasse',
+          company: 'Wormenkwekerij Wasse',
+          image: '/images/review/frank-wasse.jpg',
+          message: `Uiteindelijk de knoop doorgehakt en een nieuwe website laten maken door Pinelab. De nieuwe website is <span>10 keer sneller en stabieler</span> dan mijn oude WooCommerce website! Dat had ik veel eerder moeten doen.`
         },
         {
-          title: 'Slide 1',
-          image: 'https://buefy.org/static/img/placeholder-1280x960.png',
-          rating: 4.4
+          author: 'Amadeus',
+          company: 'Torwell GmbH',
+          image: '/images/review/amadeus.jpeg',
+          message: `Martijn from Pinelab is a very skilled and professional software developer with <span>tremendous experience in both architecture and implementation</span> level which makes him a perfect match being an external consultant.`
         },
         {
-          title: 'Slide 1',
-          image: 'https://buefy.org/static/img/placeholder-1280x960.png',
-          rating: 4.4
+          author: 'Frank Masselink',
+          company: 'Cantastic.nl',
+          image: '/images/review/frank-masselink.jpg',
+          message: `Samen met Martijn van Pinelab hebben we de nieuwe Cantastic.nl webshop ontwikkeld. We zijn erg blij met het eindresultaat. De nieuwe webshop is mooi en werkt erg fijn!`
         },
+        {
+          author: 'Timur Dogan',
+          company: 'Keeb.supply',
+          image: '/images/review/keeb.png',
+          message: `We've been using Pinelab's plugins for about a month now and they are <span>the real deal</span>. They are some of the most useful and advanced extensions for the Vendure ecosystem yet.`
+        },
+      ],
+      pricings: [
+        {
+          name: 'Starter',
+          fixedPrice: 2000,
+          yearlyPrice: 300,
+          features: []
+        },
+        {
+          name: 'Retailer',
+          fixedPrice: 3500,
+          yearlyPrice: 500,
+          features: []
+        },
+        {
+          name: 'Deluxe',
+          fixedPrice: 5000,
+          yearlyPrice: 800,
+          features: []
+        }
       ]
     }
   }
@@ -256,7 +319,12 @@ export default {
 </script>
 <style>
 .cover {
-  height: 100%;
   object-fit: cover;
+  height: 100%;
+}
+
+.client-img img {
+  height: 70px;
+  width: 70px;
 }
 </style>
