@@ -13,7 +13,6 @@ export default {
   methods: {
     async startCount() {
       const step = this.value / 50;
-      console.log(step);
       while (this.count <= this.value) {
         await new Promise(resolve => setTimeout(resolve, 20));
         this.count = this.count+ step;

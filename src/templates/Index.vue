@@ -32,6 +32,8 @@
         <div class="columns">
           <div class="column is-4">
             <ReadMoreColumn
+                data-aos="fade-up"
+                :data-aos-delay="0"
                 icon="shield-check"
                 title="UX"
             >
@@ -47,6 +49,8 @@
 
           <div class="column is-4">
             <ReadMoreColumn
+                data-aos="fade-up"
+                :data-aos-delay="100"
                 icon="brush"
                 title="Customizable"
             >
@@ -63,6 +67,8 @@
 
           <div class="column is-4">
             <ReadMoreColumn
+                data-aos="fade-up"
+                :data-aos-delay="200"
                 icon="account-multiple-check"
                 title="Support"
             >
@@ -120,7 +126,7 @@
       <div class="container">
 
         <div class="columns mb-6">
-          <div class="column pr-6 mb-6">
+          <div class="column pr-6 mb-6" data-aos="fade-right">
             <div class="block">
               <h1 class="my-4">
                 Webshop development
@@ -132,18 +138,19 @@
               <Cta link="/webshop-check/">Gratis gesprek aanvragen</Cta>
             </div>
           </div>
-          <div class="column ">
-            <img src="/images/martijn.jpeg" alt="Martijn van Pinelab"
+          <div class="column" data-aos="fade-left">
+            <img
+                src="/images/martijn.jpeg" alt="Martijn van Pinelab"
                  class="rounded cover"/>
           </div>
         </div>
 
         <div class="columns">
-          <div class="column mb-6">
+          <div class="column mb-6" data-aos="fade-right">
             <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
                  class="rounded cover"/>
           </div>
-          <div class="column has-text-right has-text-left-mobile pl-6 mb-6">
+          <div class="column has-text-right has-text-left-mobile pl-6 mb-6" data-aos="fade-left">
             <div class="block">
               <h1 class="my-4">
                 Maatwerk development
@@ -182,7 +189,10 @@
             icon-next="chevron-right"
         >
           <template #item="review">
-            <div class="rounded bordered mb-4 mr-4 flex-grow">
+            <div
+                data-aos="fade-up"
+                :data-aos-delay="review.index * 50"
+                class="rounded bordered mb-4 mr-4 flex-grow">
               <div class="card-content" v-html="review.message"/>
             </div>
             <div class="client-info is-flex is-align-items-center m-4 stick-to-bottom">
@@ -211,10 +221,10 @@
           </p>
         </div>
         <div class="columns mb-6">
-          <div class="column">
+          <div class="column" data-aos="fade-right">
             <img src="/images/cantastic-mockup.png"/>
           </div>
-          <div class="column content">
+          <div class="column content" data-aos="fade-left">
             <h2> Cantastic.nl </h2>
             <p> Een vernieuwde webshop voor art supply winkel Cantastic.nl</p>
             <ul>
@@ -226,7 +236,7 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column content">
+          <div class="column content" data-aos="fade-right">
             <h2> OpHetBoek.nl </h2>
             <p> Voor het e-book van Jet van Nieuwkerk maakten wij een webshop waar bezoekers het boek "Op!" konden
               bestellen.</p>
@@ -236,7 +246,7 @@
               <li><span>Geen handmatige handelingen:</span> klanten ontvangen automatisch het boek in hun email</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-left">
             <img src="/images/op-mockup.png"/>
           </div>
         </div>
@@ -256,9 +266,12 @@
         </div>
 
         <div class="columns">
-          <template v-for="pricing of pricings">
+          <template v-for="(pricing, index) of pricings">
             <div class="column">
-              <div class="pricing-block card has-text-centered rounded bordered flex-parent">
+              <div class="pricing-block card has-text-centered rounded bordered flex-parent"
+                   data-aos="fade-up"
+                   :data-aos-delay="index === 1 ? 0 : (index + 1) * 100"
+              >
                 <div class="price-header">
                   <span class="is-uppercase letter-spacing h5">{{ pricing.name }}</span>
                   <h2><span>€{{ pricing.fixedPrice }}</span></h2>
@@ -287,6 +300,7 @@
 <script>
 import CountUp from "../components/CountUp";
 import ThugLifeComponent from "../components/ThugLifeComponent";
+import AOS from "aos";
 
 export default {
   components: { ThugLifeComponent, CountUp },
@@ -294,7 +308,13 @@ export default {
     this.width = window.innerWidth;
     this.$nextTick(() => {
       window.addEventListener('resize', () => this.width = window.innerWidth);
-    })
+    });
+    AOS.init({
+      duration: 400,
+      easing: "ease-out-quad",
+      anchorPlacement: 'top',
+      startEvent: 'load',
+    });
   },
   computed: {
     reviewsToShow() {

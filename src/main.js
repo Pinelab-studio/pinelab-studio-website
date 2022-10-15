@@ -5,11 +5,13 @@ import '@fontsource/inter/400.css';
 import '@fontsource/inter/700.css';
 import Cta from "./components/Cta";
 import ReadMoreColumn from "./components/ReadMoreColumn";
-import checkView from 'vue-check-view'
+import checkView from 'vue-check-view';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function (Vue, { router, head, isClient }) {
   Vue.use(Buefy);
-  Vue.use(checkView)
+  Vue.use(checkView);
   Vue.component('Cta', Cta);
   Vue.component('ReadMoreColumn', ReadMoreColumn);
   Vue.component('Layout', Layout);
