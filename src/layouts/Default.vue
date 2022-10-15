@@ -3,6 +3,7 @@
     <div id="navbar" class="navigation py-4">
       <div class="container">
         <b-navbar
+            :active.sync="active"
             type="is-dark"
         >
           <template #brand>
@@ -16,13 +17,16 @@
           </template>
           <template #start id="navigation">
             <li class="navbar-item">
-              <a class="navbar-link" href="#services">Services</a>
+              <a class="navbar-link" @click="active=false" href="/#services">Services</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="#about">Over ons</a>
+              <a class="navbar-link" @click="active=false" href="#cases">Cases</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="#pricing">Tarieven</a>
+              <a class="navbar-link" @click="active=false" href="#about">Over ons</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" @click="active=false" href="#pricing">Tarieven</a>
             </li>
 
           </template>
@@ -40,6 +44,13 @@
   </div>
 </template>
 <script>
+export default {
+  data() {
+    return {
+      active: false
+    }
+  },
+}
 </script>
 <style>
 </style>

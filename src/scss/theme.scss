@@ -143,10 +143,20 @@ $link-focus-border: $primary;*/
 }
 
 h1 span,
+#pricing h2 span,
+#cases span,
 #services span,
 .card-content span {
   color: $secondary;
   font-weight: 700;
+}
+
+p a {
+  color: $secondary;
+  text-decoration: underline;
+}
+a:hover {
+  color: $secondary;
 }
 
 .rounded {

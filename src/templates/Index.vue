@@ -15,7 +15,7 @@
                 onderneming.
               </p>
 
-              <Cta link="/webshop-check/">Gratis webshop check</Cta>
+              <Cta link="/webshop-check/">Gratis advies gesprek</Cta>
 
             </div>
           </div>
@@ -29,8 +29,8 @@
 
     <section id="how" class="section about" style="padding-top: 50px;">
       <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-4-widescreen is-6-tablet">
+        <div class="columns">
+          <div class="column is-4">
             <ReadMoreColumn
                 icon="shield-check"
                 title="UX"
@@ -45,7 +45,7 @@
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4-widescreen is-6-tablet">
+          <div class="column is-4">
             <ReadMoreColumn
                 icon="brush"
                 title="Customizable"
@@ -61,7 +61,7 @@
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4-widescreen is-6-tablet">
+          <div class="column is-4">
             <ReadMoreColumn
                 icon="account-multiple-check"
                 title="Support"
@@ -182,8 +182,8 @@
             icon-next="chevron-right"
         >
           <template #item="review">
-            <div class="rounded bordered m-4">
-              <div class="card-content" v-html="review.message" style="min-height: 180px;"/>
+            <div class="rounded bordered mb-4 mr-4 flex-grow">
+              <div class="card-content" v-html="review.message"/>
             </div>
             <div class="client-info is-flex is-align-items-center m-4 stick-to-bottom">
               <div class="client-img image pr-4">
@@ -199,6 +199,50 @@
       </div>
     </section>
 
+    <section id="cases" class="banner pt-0">
+      <div class="container">
+        <div class="block mb-6">
+          <h1 class="mb-4">
+            Cases
+          </h1>
+          <p> Een greep uit ons portfolio. Benieuwd naar meer? Neem
+            <g-link to="/contact/">contact</g-link>
+            met ons op!
+          </p>
+        </div>
+        <div class="columns mb-6">
+          <div class="column">
+            <img src="/images/cantastic-mockup.png"/>
+          </div>
+          <div class="column content">
+            <h2> Cantastic.nl </h2>
+            <p> Een vernieuwde webshop voor art supply winkel Cantastic.nl</p>
+            <ul>
+              <li><span>Geen klachten</span> over een langzame site meer van bezoekers.</li>
+              <li>Snelle en <span>SEO vriendelijke webshop</span> met Vendure en Vue.js</li>
+              <li>Verbeterde gebruiksvriendelijkheid met de color-picker voor spuitbussen</li>
+              <li><span>Order-pick integratie</span> met GoedGepickt, om sneller bestellingen af te handelen</li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column content">
+            <h2> OpHetBoek.nl </h2>
+            <p> Voor het e-book van Jet van Nieuwkerk maakten wij een webshop waar bezoekers het boek "Op!" konden
+              bestellen.</p>
+            <ul>
+              <li><span>Bestand tegen piekbelasting</span> door onze Google Cloud expertise</li>
+              <li>Een design dat overeenkomt met het design van het e-book</li>
+              <li><span>Geen handmatige handelingen:</span> klanten ontvangen automatisch het boek in hun email</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="/images/op-mockup.png"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="pricing" class="banner pt-0">
       <div class="container">
         <div class="block mb-6">
@@ -206,25 +250,23 @@
             Tarieven
           </h1>
           <p>
-            Hieronder vind je een schatting van wat een webshop je gaat kosten. Exacte prijzen hangen af van jouw onderneming en je wensen.
+            Hieronder vind je een schatting van wat een webshop je gaat kosten. Exacte prijzen hangen af van jouw
+            onderneming en je wensen.
           </p>
         </div>
 
         <div class="columns">
-          <template v-for="pricing of pricings" >
+          <template v-for="pricing of pricings">
             <div class="column">
-              <div class="pricing-block card has-text-centered rounded bordered">
+              <div class="pricing-block card has-text-centered rounded bordered flex-parent">
                 <div class="price-header">
                   <span class="is-uppercase letter-spacing h5">{{ pricing.name }}</span>
-                  <h2>€{{ pricing.fixedPrice }}</h2>
-                  <h6 class="text-muted"> €{{ pricing.yearlyPrice }} jaarlijks</h6>
+                  <h2><span>€{{ pricing.fixedPrice }}</span></h2>
+                  <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>
                 </div>
-                <div class="price-body">
+                <div class="price-body flex-grow">
                   <ul class="list-unstyled mb-0">
-                    <li>50 gb Hosting</li>
-                    <li>Business Analysis</li>
-                    <li>24 Hours Support</li>
-                    <li>Customer Management</li>
+                    <li v-for="feature of pricing.features">{{ feature }}</li>
                   </ul>
                 </div>
                 <div class="price-footer">
@@ -243,7 +285,6 @@
 </template>
 
 <script>
-
 import CountUp from "../components/CountUp";
 import ThugLifeComponent from "../components/ThugLifeComponent";
 
@@ -257,8 +298,10 @@ export default {
   },
   computed: {
     reviewsToShow() {
-      if (this.width < 1024) {
-        return 1.5;
+      if (this.width < 768) {
+        return 1;
+      } else if (this.width < 1024) {
+        return 1.5
       }
       return 2.5;
     }
@@ -298,19 +341,19 @@ export default {
           name: 'Starter',
           fixedPrice: 2000,
           yearlyPrice: 300,
-          features: []
+          features: ['Persoonlijke support', '100 bestellingen per maand', 'Onbeperkt aantal producten', 'Geen integraties']
         },
         {
           name: 'Retailer',
           fixedPrice: 3500,
           yearlyPrice: 500,
-          features: []
+          features: ['Persoonlijke support', '300 bestellingen per maand', 'Onbeperkt aantal producten', '1 integratie']
         },
         {
           name: 'Deluxe',
           fixedPrice: 5000,
-          yearlyPrice: 800,
-          features: []
+          yearlyPrice: 700,
+          features: ['Persoonlijke support', '> 500 bestellingen per maand', 'Onbeperkt aantal producten', '3 integraties']
         }
       ]
     }
@@ -326,5 +369,20 @@ export default {
 .client-img img {
   height: 70px;
   width: 70px;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 </style>
