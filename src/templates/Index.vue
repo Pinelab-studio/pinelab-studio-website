@@ -141,7 +141,7 @@
           <div class="column" data-aos="fade-left">
             <img
                 src="/images/martijn.jpeg" alt="Martijn van Pinelab"
-                 class="rounded cover"/>
+                class="rounded cover"/>
           </div>
         </div>
 
@@ -253,6 +253,37 @@
       </div>
     </section>
 
+    <section id="about" class="banner pt-0">
+      <div class="pinetrees p-3">
+        <div class="container has-text-centered about-mobile" data-aos="fade-up">
+          <div class="rounded shadowed-dark has-text-left content mobile-padding">
+            <h1 class="mb-4">
+              Over ons
+            </h1>
+            <p>
+              Pinelab is opgericht door mij, Martijn. Samen met mijn ervaring als software developer en mijn netwerk van
+              designers, marketeers en SEO experts bouwen wij moderne webshops met de technieken van 2022.
+            </p>
+            <p>
+              Je krijgt bij ons altijd <span>eerlijk advies</span>: We zullen niet zomaar iets maken als je daar niets aan hebt. Wij
+              hebben er net zo veel baat bij dat jouw onderneming een success is als jij zelf.
+            </p>
+            <p>
+              Waarom zou je met ons samenwerken?
+            </p>
+            <ul>
+              <li>Professionele oplossingen. Geen templates, themes of WooCommerce</li>
+              <li>9 jaar ervaring als software developer</li>
+              <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                      _target="blank">
+                <span class="is-underlined">Vendure Silver Partner</span>
+              </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="pricing" class="banner pt-0">
       <div class="container">
         <div class="block mb-6">
@@ -277,7 +308,7 @@
                   <h2><span>€{{ pricing.fixedPrice }}</span></h2>
                   <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>
                 </div>
-                <div class="price-body flex-grow">
+                <div class="price-body flex-grow p-2">
                   <ul class="list-unstyled mb-0">
                     <li v-for="feature of pricing.features">{{ feature }}</li>
                   </ul>
@@ -404,5 +435,11 @@ export default {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.pinetrees {
+  background-image: url("/images/pinetrees.jpg");
+  object-fit: cover;
+  height: 100%;
 }
 </style>

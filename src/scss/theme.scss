@@ -32,6 +32,7 @@ $body-background-color: $background;
 $button-text-hover-background-color: $text;
 $carousel-arrow-color: $background;
 $card-background-color: $background;
+$input-background-color: $background;
 
 $navbar-background-color: $background;
 $navbar-item-color: $text;
@@ -142,10 +143,18 @@ $link-focus-border: $primary;*/
   box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.2);
 }
 
+.shadowed-dark {
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+  background-color: $background;
+}
+
 h1 span,
 #pricing h2 span,
 #cases span,
 #services span,
+#about span,
 .card-content span {
   color: $secondary;
   font-weight: 700;
@@ -171,6 +180,26 @@ a:hover {
   box-shadow: none !important;
 }
 
+.about-mobile {
+  margin: 3rem;
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.mobile-padding {
+  padding: 3rem;
+  @include mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer a {
+  color: $text-light;
+  text-decoration: none;
+}
 
 /* Animated CTA */
 .shiny {

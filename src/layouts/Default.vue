@@ -41,6 +41,24 @@
     </div>
 
     <slot></slot>
+
+    <footer class="footer">
+      <div class="container content has-text-centered  pb-6">
+        <p>
+          Pinelab •
+          <a :href="`mailto: ${$context.email}`">{{ $context.email }}</a> •
+          <a :href="`tel: ${$context.phone}`">{{ $context.phone }}</a> •
+          BTW {{ $context.vat }} •
+          KVK {{ $context.coc }} •
+          <a :href="$context.github" target="_blank">
+            <b-icon
+                icon="github"
+                size="is-small">
+            </b-icon>
+          </a>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
