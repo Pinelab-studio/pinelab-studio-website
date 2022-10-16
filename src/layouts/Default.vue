@@ -71,4 +71,7 @@ export default {
 }
 </script>
 <style>
+.footer {
+  box-shadow: 0 -1px 2px #a9a9a9;
+}
 </style>
