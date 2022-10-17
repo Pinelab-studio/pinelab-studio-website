@@ -1,11 +1,56 @@
 <template>
-  <g-link :to="link" class="button cta is-primary shiny">
-    <strong><slot/></strong>
-  </g-link>
+  <div>
+    <b-modal v-model="isFormOpen">
+      <div class="card rounded bordered p-4">
+        <div class="columns is-multiline is-centered has-text-left">
+          <div class="column is-8-desktop">
+            <h2> Contact</h2>
+            <p>Laat je emailadres achter en we nemen zo snel mogelijk contact met je op!</p>
+          </div>
+          <div class="column is-8-desktop">
+            <form id="contact-form" class="contact__form" method="post" action="https://formspree.io/f/xdopwkwl">
+              <!-- form message -->
+              <div class="columns is-multiline">
+                <div class="column is-12">
+                  <input name="email" class="input is-normal bordered" type="text" placeholder="Je emailadres">
+                </div>
+                <div class="column is-12">
+                  <textarea class="textarea  bordered" name="message" :value="formMessage" style="display:none"></textarea>
+                  <input type="text" name="_gotcha" style="display:none"/>
+                </div>
+                <div class="column is-12 has-text-right">
+                  <button class="button cta is-primary shiny" name="submit" type="submit">Verstuur</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </b-modal>
+    <template v-if="formMessage">
+      <a @click="isFormOpen=true" class="button cta is-primary shiny">
+        <strong>
+          <slot/>
+        </strong>
+      </a>
+    </template>
+    <template v-else>
+      <g-link :to="link" class="button cta is-primary shiny">
+        <strong>
+          <slot/>
+        </strong>
+      </g-link>
+    </template>
+  </div>
 </template>
 <script>
 export default {
-  props: ['link']
+  props: ['link', 'formMessage'],
+  data() {
+    return {
+      isFormOpen: false
+    }
+  }
 }
 </script>
 <style>

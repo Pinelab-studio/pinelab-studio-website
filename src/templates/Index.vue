@@ -15,7 +15,7 @@
                 onderneming.
               </p>
 
-              <Cta link="/webshop-check/">Gratis advies gesprek</Cta>
+              <Cta form-message="Gratis gesprek aanvragen - hero">Gratis gesprek aanvragen</Cta>
 
             </div>
           </div>
@@ -126,17 +126,17 @@
       <div class="container">
 
         <div class="columns mb-6">
-          <div class="column pr-6 mb-6" data-aos="fade-right">
-            <div class="block">
+          <div class="column pr-6 mb-6">
+            <div class="block" data-aos="fade-right">
               <h1 class="my-4">
                 Webshop development
               </h1>
               <p class="mb-6">
                 We bouwen complete custom webshops met Vendure, inclusief hosting, onderhoud en support. Voor een
-                complete webshop kunnen we je <span>vooraf kosteloos vertellen wat het je gaat kosten.</span>
+                complete webshop kunnen we je vooraf <span>kosteloos</span> vertellen wat het je gaat kosten.
               </p>
-              <Cta link="/webshop-check/">Gratis gesprek aanvragen</Cta>
             </div>
+            <Cta form-message="Gratis gesprek aanvragen - webshop development">Gratis gesprek aanvragen</Cta>
           </div>
           <div class="column" data-aos="fade-left">
             <img
@@ -150,8 +150,8 @@
             <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
                  class="rounded cover"/>
           </div>
-          <div class="column has-text-right has-text-left-mobile pl-6 mb-6" data-aos="fade-left">
-            <div class="block">
+          <div class="column has-text-right has-text-left-mobile pl-6 mb-6">
+            <div class="block" data-aos="fade-left">
               <h1 class="my-4">
                 Maatwerk development
               </h1>
@@ -162,8 +162,8 @@
               </a> kunnen we al jouw e-commerce wensen
                 realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
               </p>
-              <Cta link="/webshop-check/">Gratis gesprek aanvragen</Cta>
             </div>
+            <Cta form-message="Gratis gesprek aanvragen - Maatwerk development">Gratis gesprek aanvragen</Cta>
           </div>
 
         </div>
@@ -255,30 +255,34 @@
 
     <section id="about" class="banner pt-0">
       <div class="pinetrees p-3">
-        <div class="container has-text-centered about-mobile" data-aos="fade-up">
-          <div class="rounded shadowed-dark has-text-left content mobile-padding">
-            <h1 class="mb-4">
-              Over ons
-            </h1>
-            <p>
-              Pinelab is opgericht door mij, Martijn. Samen met mijn ervaring als software developer en mijn netwerk van
-              designers, marketeers en SEO experts bouwen wij moderne webshops met de technieken van 2022.
-            </p>
-            <p>
-              Je krijgt bij ons altijd <span>eerlijk advies</span>: We zullen niet zomaar iets maken als je daar niets aan hebt. Wij
-              hebben er net zo veel baat bij dat jouw onderneming een success is als jij zelf.
-            </p>
-            <p>
-              Waarom zou je met ons samenwerken?
-            </p>
-            <ul>
-              <li>Professionele oplossingen. Geen templates, themes of WooCommerce</li>
-              <li>9 jaar ervaring als software developer</li>
-              <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                      _target="blank">
-                <span class="is-underlined">Vendure Silver Partner</span>
-              </a> </li>
-            </ul>
+        <div class="container">
+          <div class=" about-mobile" data-aos="fade-up">
+            <div class="rounded shadowed-dark has-text-left content mobile-padding">
+              <h1 class="mb-4">
+                Over ons
+              </h1>
+              <p>
+                Pinelab is opgericht door mij, Martijn. Samen met mijn ervaring als software developer en mijn netwerk
+                van
+                designers, marketeers en SEO experts bouwen wij moderne webshops met de technieken van 2022.
+              </p>
+              <p>
+                Je krijgt bij ons altijd <span>eerlijk advies</span>: We zullen niet zomaar iets maken als je daar niets
+                aan hebt. Wij
+                hebben er net zo veel baat bij dat jouw onderneming een success is als jij zelf.
+              </p>
+              <p>
+                Waarom zou je met ons samenwerken?
+              </p>
+              <ul>
+                <li>Professionele oplossingen. Geen templates, themes of WooCommerce</li>
+                <li>9 jaar ervaring als software developer</li>
+                <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                       _target="blank">
+                  <span class="is-underlined">Vendure Silver Partner</span>
+                </a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -298,7 +302,7 @@
 
         <div class="columns">
           <template v-for="(pricing, index) of pricings">
-            <div class="column">
+            <div class="column has-text-centered">
               <div class="pricing-block card has-text-centered rounded bordered flex-parent"
                    data-aos="fade-up"
                    :data-aos-delay="index === 1 ? 0 : (index + 1) * 100"
@@ -309,14 +313,13 @@
                   <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>
                 </div>
                 <div class="price-body flex-grow p-2">
+                  <br/>
                   <ul class="list-unstyled mb-0">
                     <li v-for="feature of pricing.features">{{ feature }}</li>
                   </ul>
                 </div>
-                <div class="price-footer">
-                  <Cta link="/webshop-check/">Vraag aan</Cta>
-                </div>
               </div>
+              <Cta class="mt-5 is-fullwidth" :form-message="`Vraag aan - Pricing: ${pricing.name} - ${pricing.fixedPrice}`">Vraag aan</Cta>
 
             </div>
           </template>
@@ -430,7 +433,7 @@ export default {
 .flex-parent {
   display: flex;
   flex-direction: column;
-  height: 100%;
+/*  height: 100%;*/
 }
 
 .flex-grow {

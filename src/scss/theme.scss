@@ -45,6 +45,7 @@ $navbar-item-hover-background-color: $background;
 $navbar-burger-color: $text;
 $navbar-box-shadow-size: 0;
 $navbar-box-shadow-color: $primary;
+$navbar-item-active-background-color: $background;
 
 
 // Lists and maps
@@ -138,6 +139,10 @@ $link-focus-border: $primary;*/
   background-color: transparent;
 }
 
+.navbar-link:focus {
+  background-color: transparent !important;
+}
+
 .shadowed {
   -webkit-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.2);
@@ -200,6 +205,13 @@ a:hover {
 .footer a {
   color: $text-light;
   text-decoration: none;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+.is-fullwidth .button {
+  width: 100%;
 }
 
 /* Animated CTA */

@@ -18,7 +18,7 @@
               <!-- form message -->
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <input class="input is-normal bordered" type="text" placeholder="Je emailadres">
+                  <input name="email" class="input is-normal bordered" type="text" placeholder="Je emailadres">
                 </div>
                 <div class="column is-12">
                   <textarea class="textarea  bordered" name="message" placeholder="Je bericht"></textarea>
