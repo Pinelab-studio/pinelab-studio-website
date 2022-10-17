@@ -216,10 +216,28 @@ import AOS from "aos";
 
 export default {
   components: { CtaEn },
-  metaInfo: {
-    htmlAttrs: {
-      lang: 'en',
-    },
+  metaInfo() {
+    const title = 'Pinelab e-commerce development';
+    const description = 'As certified Vendure Silver Partner we build professional e-commerce solutions.';
+    return {
+      htmlAttrs: {
+        lang: 'en',
+      },
+      title,
+      meta: [
+        { key: 'title', name: 'title', content: title},
+        { key: 'description', name: 'description', content: description },
+        { key: 'og:title', name: 'og:title', content: title },
+        {
+          key: 'og:description',
+          name: 'og:description',
+          content: description,
+        },
+        { key: 'og:image', name: 'og:image', content: 'https://pinelab.studio/images/vendure-silver-partner.jpg' },
+        { key: 'og:type', name: 'og:type', content: 'website' },
+        { key: 'og:url', name: 'og:url', content: 'https://pinelab.studio/' },
+      ],
+    };
   },
   mounted() {
     this.width = window.innerWidth;

@@ -376,6 +376,26 @@ export default {
       startEvent: 'load',
     });
   },
+  metaInfo() {
+    const title = 'Pinelab e-commerce experts';
+    const description = 'Pinelab bouwt professionele webshops en e-commerce integraties met technieken van 2022';
+    return {
+      title,
+      meta: [
+        { key: 'title', name: 'title', content: title},
+        { key: 'description', name: 'description', content: description },
+        { key: 'og:title', name: 'og:title', content: title },
+        {
+          key: 'og:description',
+          name: 'og:description',
+          content: description,
+        },
+        { key: 'og:image', name: 'og:image', content: 'https://pinelab.studio/images/vendure-silver-partner.jpg' },
+        { key: 'og:type', name: 'og:type', content: 'website' },
+        { key: 'og:url', name: 'og:url', content: 'https://pinelab.studio/' },
+      ],
+    };
+  },
   computed: {
     reviewsToShow() {
       if (this.width < 768) {
