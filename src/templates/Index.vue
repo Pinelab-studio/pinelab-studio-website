@@ -173,8 +173,7 @@
                 Maatwerk development
               </h1>
               <p class="mb-6">
-                Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                                                        _target="blank">
+                Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV" target="blank">
                 <span class="is-underlined">Vendure Silver Partner</span>
               </a> kunnen we al jouw e-commerce wensen
                 realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
@@ -300,7 +299,7 @@
                 <li>Professionele oplossingen. Geen templates, themes of WooCommerce</li>
                 <li>9 jaar ervaring als software developer</li>
                 <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                       _target="blank">
+                       target="blank">
                   <span class="is-underlined">Vendure Silver Partner</span>
                 </a></li>
               </ul>
