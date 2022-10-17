@@ -18,7 +18,11 @@
 
           <template #end>
             <b-navbar-item tag="div">
-              <Cta link="/contact/">CONTACT</Cta>
+              <CtaEn
+                  form-message="Get in touch - footer"
+                  click-event-name="EN - Bottom contact"
+              >Get in touch
+              </CtaEn>
             </b-navbar-item>
           </template>
         </b-navbar>
