@@ -19,7 +19,7 @@
                   <input type="text" name="_gotcha" style="display:none"/>
                 </div>
                 <div class="column is-12 has-text-right">
-                  <button class="button cta is-primary shiny" name="submit" type="submit">Verstuur</button>
+                  <button class="button cta is-primary shiny" name="submit" type="submit">Send</button>
                 </div>
               </div>
             </form>
