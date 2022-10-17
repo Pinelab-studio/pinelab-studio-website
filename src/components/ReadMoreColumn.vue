@@ -15,13 +15,20 @@
       <p v-if="readMore">
         <slot name="more"/>
       </p>
-      <a @click="readMore = !readMore"> {{ readMore ? 'Toon minder &#9650;' : 'Lees meer' }} </a>
+      <a @click="click()"> {{ readMore ? 'Toon minder &#9650;' : 'Lees meer' }} </a>
     </div>
   </div>
 </template>
 <script>
 export default {
   props: ['icon', 'title'],
+  methods: {
+    click() {
+      this.readMore = !this.readMore;
+      const eventName = `Read more ${this.title}`;
+      this.logClick(eventName, eventName);
+    }
+  },
   data() {
     return {
       readMore: false

@@ -196,6 +196,7 @@
             :arrow-hover="false"
             icon-prev="chevron-left"
             icon-next="chevron-right"
+            v-on:change="logClick('testimonial change', 'testimonial change')"
         >
           <template #item="review">
             <div
