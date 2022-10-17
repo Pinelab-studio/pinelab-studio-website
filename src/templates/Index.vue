@@ -377,7 +377,7 @@ export default {
   },
   metaInfo() {
     const title = 'Pinelab e-commerce experts';
-    const description = 'Pinelab bouwt professionele webshops en e-commerce integraties met technieken van 2022';
+    const description = 'Professionele webshops en e-commerce oplossingen voor de gevorderde ondernemer';
     return {
       title,
       meta: [
