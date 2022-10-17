@@ -13,7 +13,7 @@
     <section id="value-proposition" class="banner is-flex is-align-items-center pt-6">
       <div class="container">
         <div class="columns">
-          <div class="column is-7-widescreen is-6-desktop">
+          <div class="column is-7-widescreen is-6-desktop pr-6">
             <div class="block">
               <span class="is-uppercase text-sm letter-spacing ">DE WEBSHOP EXPERTS</span>
               <h1 class="my-4">
@@ -199,7 +199,6 @@
           </h1>
         </div>
         <b-carousel-list
-            v-model="test"
             :data="reviews"
             :items-to-show="reviewsToShow"
             :arrow="true"
@@ -462,6 +461,7 @@ export default {
 .cover {
   object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 
 .client-img img {
