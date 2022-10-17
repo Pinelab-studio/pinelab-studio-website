@@ -1,7 +1,16 @@
 <template>
   <Layout>
+    <section id="language">
+      <div class="container mt-90">
+        <div class="has-text-right pt-4">
+          <g-link to="/en/" aria-label="English version">
+            <img src="/images/gb-flag.svg" style="height: 30px;"/>
+          </g-link>
+        </div>
+      </div>
+    </section>
     <!-- Hero -->
-    <section id="value-proposition" class="banner is-flex is-align-items-center mt-90">
+    <section id="value-proposition" class="banner is-flex is-align-items-center pt-6">
       <div class="container">
         <div class="columns">
           <div class="column is-7-widescreen is-6-desktop">
@@ -18,7 +27,8 @@
               <Cta
                   form-message="Gratis gesprek aanvragen - hero"
                   click-event-name="Hero contact"
-              >Gratis gesprek aanvragen</Cta>
+              >Gratis gesprek aanvragen
+              </Cta>
 
             </div>
           </div>
@@ -142,7 +152,8 @@
             <Cta
                 form-message="Gratis gesprek aanvragen - webshop development"
                 click-event-name="Webshop development"
-            >Gratis gesprek aanvragen</Cta>
+            >Gratis gesprek aanvragen
+            </Cta>
           </div>
           <div class="column" data-aos="fade-left">
             <img
@@ -172,7 +183,8 @@
             <Cta
                 form-message="Gratis gesprek aanvragen - Maatwerk development"
                 click-event-name="Custom development"
-            >Gratis gesprek aanvragen</Cta>
+            >Gratis gesprek aanvragen
+            </Cta>
           </div>
 
         </div>
@@ -333,7 +345,8 @@
                   class="mt-5 is-fullwidth"
                   :form-message="`Vraag aan - Pricing: ${pricing.name} - ${pricing.fixedPrice}`"
                   :click-event-name="pricing.name"
-              >Vraag aan</Cta>
+              >Vraag aan
+              </Cta>
 
             </div>
           </template>
@@ -347,11 +360,10 @@
 
 <script>
 import CountUp from "../components/CountUp";
-import ThugLifeComponent from "../components/ThugLifeComponent";
 import AOS from "aos";
 
 export default {
-  components: { ThugLifeComponent, CountUp },
+  components: { CountUp },
   mounted() {
     this.width = window.innerWidth;
     this.$nextTick(() => {
@@ -377,7 +389,6 @@ export default {
   data() {
     return {
       width: 1200,
-      test: 0,
       reviews: [
         {
           author: 'Frank Wasse',
@@ -447,7 +458,7 @@ export default {
 .flex-parent {
   display: flex;
   flex-direction: column;
-/*  height: 100%;*/
+  /*  height: 100%;*/
 }
 
 .flex-grow {

@@ -13,7 +13,7 @@
         </p>
 
         <div class="columns is-multiline">
-          <div class="column is-8-desktop">
+          <div class="column is-6-desktop">
             <form id="contact-form" class="contact__form" method="post" action="https://formspree.io/f/xdopwkwl">
               <!-- form message -->
               <div class="columns is-multiline">
