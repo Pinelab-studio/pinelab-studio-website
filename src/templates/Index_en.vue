@@ -264,8 +264,8 @@
     </section>
 
     <section id="about" class="banner pt-0">
-      <div class="pinetrees p-3 columns is-centered">
-        <div class="container column is-8-desktop is-12-tablet">
+      <div class="pinetrees p-3">
+        <div class="container">
           <div class=" about-mobile" data-aos="fade-up">
             <div class="rounded shadowed-dark has-text-left content mobile-padding">
               <h1 class="mb-4">
@@ -351,7 +351,11 @@ import ThugLifeComponent from "../components/ThugLifeComponent";
 import AOS from "aos";
 
 export default {
-  components: { ThugLifeComponent, CountUp },
+  components: { CountUp },
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en',
+    },
   mounted() {
     this.width = window.innerWidth;
     this.$nextTick(() => {
