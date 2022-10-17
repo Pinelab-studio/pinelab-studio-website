@@ -8,7 +8,8 @@
     "@fontsource/inter": "^4.5.13",
     "aos": "^2.3.4",
     "buefy": "^0.9.7",
-    "vue-check-view": "^0.3.0"
+    "vue-check-view": "^0.3.0",
+    "vue-gtag": "1.16.1"
   },
   "devDependencies": {
     "@gridsome/source-graphql": "^0.1.0",

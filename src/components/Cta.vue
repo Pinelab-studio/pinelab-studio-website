@@ -28,7 +28,7 @@
       </div>
     </b-modal>
     <template v-if="formMessage">
-      <a @click="isFormOpen=true" class="button cta is-primary shiny">
+      <a @click="click()" class="button cta is-primary shiny">
         <strong>
           <slot/>
         </strong>
@@ -45,7 +45,13 @@
 </template>
 <script>
 export default {
-  props: ['link', 'formMessage'],
+  props: ['link', 'formMessage', 'clickEventName'],
+  methods : {
+    click() {
+      this.isFormOpen=true;
+      this.logClick(this.clickEventName, this.clickEventName);
+    }
+  },
   data() {
     return {
       isFormOpen: false

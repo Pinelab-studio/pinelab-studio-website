@@ -6,13 +6,41 @@ import '@fontsource/inter/700.css';
 import Cta from "./components/Cta";
 import ReadMoreColumn from "./components/ReadMoreColumn";
 import checkView from 'vue-check-view';
-import AOS from 'aos'
 import 'aos/dist/aos.css'
+import VueGtag from "vue-gtag";
+import Consent from "./components/Consent";
 
 export default function (Vue, { router, head, isClient }) {
-  Vue.use(Buefy);
-  Vue.use(checkView);
-  Vue.component('Cta', Cta);
-  Vue.component('ReadMoreColumn', ReadMoreColumn);
-  Vue.component('Layout', Layout);
+    Vue.use(Buefy);
+    Vue.use(checkView);
+    Vue.component('Cta', Cta);
+    Vue.component('ReadMoreColumn', ReadMoreColumn);
+    Vue.component('Layout', Layout);
+    Vue.component('Consent', Consent);
+    Vue.mixin({
+        methods: {
+            logClick(label, value) {
+                this.$gtag.event('click', {
+                    event_category: 'Button',
+                    event_label: label,
+                    value: value
+                })
+            }
+        }
+    });
+    if (isClient) {
+        Vue.use(
+            VueGtag,
+            {
+                config: {
+                    id: 'G-V15SX04B0P',
+                    params: {
+                        anonymize_ip: true,
+                    },
+                },
+                bootstrap: false,
+            },
+            router
+        );
+    }
 }

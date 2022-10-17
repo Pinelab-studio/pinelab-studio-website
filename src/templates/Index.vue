@@ -15,7 +15,10 @@
                 onderneming.
               </p>
 
-              <Cta form-message="Gratis gesprek aanvragen - hero">Gratis gesprek aanvragen</Cta>
+              <Cta
+                  form-message="Gratis gesprek aanvragen - hero"
+                  click-event-name="Hero contact"
+              >Gratis gesprek aanvragen</Cta>
 
             </div>
           </div>
@@ -136,7 +139,10 @@
                 complete webshop kunnen we je vooraf <span>kosteloos</span> vertellen wat het je gaat kosten.
               </p>
             </div>
-            <Cta form-message="Gratis gesprek aanvragen - webshop development">Gratis gesprek aanvragen</Cta>
+            <Cta
+                form-message="Gratis gesprek aanvragen - webshop development"
+                click-event-name="Webshop development"
+            >Gratis gesprek aanvragen</Cta>
           </div>
           <div class="column" data-aos="fade-left">
             <img
@@ -163,7 +169,10 @@
                 realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
               </p>
             </div>
-            <Cta form-message="Gratis gesprek aanvragen - Maatwerk development">Gratis gesprek aanvragen</Cta>
+            <Cta
+                form-message="Gratis gesprek aanvragen - Maatwerk development"
+                click-event-name="Custom development"
+            >Gratis gesprek aanvragen</Cta>
           </div>
 
         </div>
@@ -319,7 +328,11 @@
                   </ul>
                 </div>
               </div>
-              <Cta class="mt-5 is-fullwidth" :form-message="`Vraag aan - Pricing: ${pricing.name} - ${pricing.fixedPrice}`">Vraag aan</Cta>
+              <Cta
+                  class="mt-5 is-fullwidth"
+                  :form-message="`Vraag aan - Pricing: ${pricing.name} - ${pricing.fixedPrice}`"
+                  :click-event-name="pricing.name"
+              >Vraag aan</Cta>
 
             </div>
           </template>

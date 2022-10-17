@@ -42,6 +42,15 @@
 
     <slot></slot>
 
+    <Consent
+        thank-you-message="Bedankt"
+        decline-text="Nee"
+        accept-text="Ja, geen probleem"
+    >
+      <h3 class="has-text-white"> Cookies </h3>
+      Vind je het goed dat we cookies gebruiken om het gebruik van onze site te meten?
+    </Consent>
+
     <footer class="footer">
       <div class="container content has-text-centered  pb-6">
         <p>
