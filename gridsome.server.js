@@ -34,5 +34,13 @@ module.exports = async function (api) {
       },
     });
 
+    createPage({
+      path: '/404/',
+      component: './src/templates/404.vue',
+      context: {
+        ...global
+      },
+    });
+
   });
 };
