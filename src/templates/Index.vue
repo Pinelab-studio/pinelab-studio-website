@@ -167,7 +167,7 @@
             <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
                  class="rounded cover"/>
           </div>
-          <div class="column has-text-right has-text-left-mobile pl-6 mb-6">
+          <div class="column pl-6 mb-6">
             <div class="block" data-aos="fade-left">
               <h1 class="my-4">
                 Maatwerk development
@@ -255,7 +255,7 @@
             </ul>
           </div>
         </div>
-        <div class="columns">
+        <div class="columns mb-6">
           <div class="column content" data-aos="fade-right">
             <h2> OpHetBoek.nl </h2>
             <p> Voor het e-book van Jet van Nieuwkerk maakten wij een webshop waar bezoekers het boek "Op!" konden
@@ -268,6 +268,20 @@
           </div>
           <div class="column" data-aos="fade-left">
             <img src="/images/op-mockup.png"/>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column" data-aos="fade-right">
+            <img src="/images/plugins-mockup.png"/>
+          </div>
+          <div class="column content" data-aos="fade-left">
+            <h2> Pinelab plugins </h2>
+            <p> Om de beste kwaliteit te garanderen bouwen en onderhouden we onze eigen plugins.</p>
+            <ul>
+              <li>Zo zijn we <span>onafhankelijk</span> van derde partijen</li>
+              <li>Een nieuwe koppeling nodig? Wij bouwen 'm gewoon</li>
+              <li>Bekijk al onze plugins op <a href="https://pinelab-plugins.com/" target="_blank"><span>pinelab-plugins.com</span></a></li>
+            </ul>
           </div>
         </div>
       </div>
