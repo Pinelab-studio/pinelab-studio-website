@@ -215,6 +215,10 @@ a:hover {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animated CTA */
 .shiny {
   animation-name: shine;
