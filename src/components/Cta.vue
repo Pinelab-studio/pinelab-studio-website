@@ -13,12 +13,14 @@
               <!-- form message -->
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <input name="email" class="input is-normal bordered" type="text" placeholder="Je emailadres">
+                  <input name="email" class="input is-normal bordered" type="email" placeholder="Je emailadres">
+                </div>
+                <div class="column is-12 form-message-bots">
+                  <textarea type="text" name="_gotcha" placeholder="Message"/>
                 </div>
                 <div class="column is-12">
-                  <textarea class="textarea  bordered" name="message" :value="formMessage"
+                  <textarea class="textarea bordered" name="real-message" :value="formMessage"
                             style="display:none"></textarea>
-                  <input type="text" name="_gotcha" style="display:none"/>
                 </div>
                 <div class="column is-12 has-text-right">
                   <button class="button cta is-primary shiny" name="submit" type="submit">Verstuur</button>

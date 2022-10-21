@@ -27,7 +27,7 @@
               <Cta
                   form-message="Webshop check aanvragen - hero"
                   click-event-name="Hero contact"
-                  form-display-message="Laat je emailadres achter en we nemen zo snel mogelijk contact met je op om de webshop check te doen!"
+                  form-display-message="Laat je emailadres achter en we doen zo snel mogelijk de webshop check!"
               >Gratis webshop check aanvragen
               </Cta>
 
