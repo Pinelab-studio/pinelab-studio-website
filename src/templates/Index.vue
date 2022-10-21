@@ -173,7 +173,8 @@
                 Maatwerk development
               </h1>
               <p class="mb-6">
-                Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV" target="blank">
+                Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                                                        target="blank">
                 <span class="is-underlined">Vendure Silver Partner</span>
               </a> kunnen we al jouw e-commerce wensen
                 realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
@@ -280,7 +281,8 @@
             <ul>
               <li>Zo zijn we <span>onafhankelijk</span> van derde partijen</li>
               <li>Een nieuwe koppeling nodig? Wij bouwen 'm gewoon</li>
-              <li>Bekijk al onze plugins op <a href="https://pinelab-plugins.com/" target="_blank"><span>pinelab-plugins.com</span></a></li>
+              <li>Bekijk al onze plugins op <a href="https://pinelab-plugins.com/" target="_blank"><span>pinelab-plugins.com</span></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -298,7 +300,8 @@
               <p>
                 Pinelab is opgericht door mij, Martijn. Samen met mijn ervaring als software developer en mijn netwerk
                 van
-                designers, marketeers en SEO experts bouwen wij moderne webshops met de technieken van 2022.
+                designers, marketeers en SEO experts <span>doen we 1 ding, en dat doen we als de beste</span>: we bouwen
+                moderne webshops die meetbaar resultaat opleveren voor de ondernemer.
               </p>
               <p>
                 Je krijgt bij ons altijd <span>eerlijk advies</span>: We zullen niet zomaar iets maken als je daar niets
@@ -309,8 +312,8 @@
                 Waarom zou je met ons samenwerken?
               </p>
               <ul>
-                <li>Professionele oplossingen. Geen templates, themes of WooCommerce</li>
-                <li>9 jaar ervaring als software developer</li>
+                <li>Professionele oplossingen met meetbaar resultaat</li>
+                <li>9 jaar ervaring met het bouwen van e-commerce platformen</li>
                 <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
                        target="blank">
                   <span class="is-underlined">Vendure Silver Partner</span>
@@ -394,7 +397,7 @@ export default {
     return {
       title,
       meta: [
-        { key: 'title', name: 'title', content: title},
+        { key: 'title', name: 'title', content: title },
         { key: 'description', name: 'description', content: description },
         { key: 'og:title', name: 'og:title', content: title },
         {
