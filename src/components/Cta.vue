@@ -5,7 +5,8 @@
         <div class="columns is-multiline is-centered has-text-left">
           <div class="column is-8-desktop">
             <h2> Contact</h2>
-            <p>Laat je emailadres achter en we nemen zo snel mogelijk contact met je op!</p>
+            <p v-if="!formDisplayMessage">Laat je emailadres achter en we nemen zo snel mogelijk contact met je op!</p>
+            <p v-else>{{ formDisplayMessage }}</p>
           </div>
           <div class="column is-8-desktop">
             <form id="contact-form" class="contact__form" method="post" action="https://formspree.io/f/xdopwkwl">
@@ -15,7 +16,8 @@
                   <input name="email" class="input is-normal bordered" type="text" placeholder="Je emailadres">
                 </div>
                 <div class="column is-12">
-                  <textarea class="textarea  bordered" name="message" :value="formMessage" style="display:none"></textarea>
+                  <textarea class="textarea  bordered" name="message" :value="formMessage"
+                            style="display:none"></textarea>
                   <input type="text" name="_gotcha" style="display:none"/>
                 </div>
                 <div class="column is-12 has-text-right">
@@ -45,10 +47,10 @@
 </template>
 <script>
 export default {
-  props: ['link', 'formMessage', 'clickEventName'],
-  methods : {
+  props: ['link', 'formMessage', 'clickEventName', 'formDisplayMessage'],
+  methods: {
     click() {
-      this.isFormOpen=true;
+      this.isFormOpen = true;
       this.logClick(this.clickEventName, this.clickEventName);
     }
   },

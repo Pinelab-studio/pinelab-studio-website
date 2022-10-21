@@ -2,7 +2,7 @@
   "name": "pinelab-studio-website",
   "private": true,
   "scripts": {
-    "serve:static": "yarn concurrently \"nodemon --ext js,vue --watch '.src/' --exec 'yarn gridsome build && yarn http-server ./dist/'\""
+    "serve:static": "yarn nodemon --ext js,vue --watch .src --exec 'yarn gridsome build && yarn http-server ./dist/'"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.13",

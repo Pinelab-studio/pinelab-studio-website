@@ -25,9 +25,10 @@
               </p>
 
               <Cta
-                  form-message="Gratis gesprek aanvragen - hero"
+                  form-message="Webshop check aanvragen - hero"
                   click-event-name="Hero contact"
-              >Gratis gesprek aanvragen
+                  form-display-message="Laat je emailadres achter en we nemen zo snel mogelijk contact met je op om de webshop check te doen!"
+              >Gratis webshop check aanvragen
               </Cta>
 
             </div>
@@ -43,10 +44,11 @@
     <section id="how" class="section about" style="padding-top: 50px;">
       <div class="container">
         <div class="columns">
-          <div class="column is-4">
+          <div class="column is-4"
+               data-aos="fade-up"
+               :data-aos-delay="0"
+          >
             <ReadMoreColumn
-                data-aos="fade-up"
-                :data-aos-delay="0"
                 icon="shield-check"
                 title="UX"
             >
@@ -60,10 +62,11 @@
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4"
+               data-aos="fade-up"
+               :data-aos-delay="100"
+          >
             <ReadMoreColumn
-                data-aos="fade-up"
-                :data-aos-delay="100"
                 icon="brush"
                 title="Customizable"
             >
@@ -78,10 +81,11 @@
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4"
+               data-aos="fade-up"
+               :data-aos-delay="200"
+          >
             <ReadMoreColumn
-                data-aos="fade-up"
-                :data-aos-delay="200"
                 icon="account-multiple-check"
                 title="Support"
             >
@@ -150,9 +154,9 @@
               </p>
             </div>
             <Cta
-                form-message="Gratis gesprek aanvragen - webshop development"
+                form-message="Vrijblijvend gesprek aanvragen - webshop development"
                 click-event-name="Webshop development"
-            >Gratis gesprek aanvragen
+            >Vrijblijvend gesprek aanvragen
             </Cta>
           </div>
           <div class="column" data-aos="fade-left">
@@ -181,9 +185,9 @@
               </p>
             </div>
             <Cta
-                form-message="Gratis gesprek aanvragen - Maatwerk development"
+                form-message="Vrijblijvend gesprek aanvragen - Maatwerk development"
                 click-event-name="Custom development"
-            >Gratis gesprek aanvragen
+            >Vrijblijvend gesprek aanvragen
             </Cta>
           </div>
 

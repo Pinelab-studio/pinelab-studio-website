@@ -12,9 +12,11 @@
       <p class="mb-5">
         <slot name="preview"/>
       </p>
-      <p v-if="readMore">
-        <slot name="more"/>
-      </p>
+      <transition>
+        <p v-if="readMore">
+          <slot name="more"/>
+        </p>
+      </transition>
       <a @click="click()"> {{ readMore ? 'Toon minder &#9650;' : 'Lees meer' }} </a>
     </div>
   </div>
@@ -35,5 +37,19 @@ export default {
     }
   }
 }
-
 </script>
+<style>
+.v-enter-active {
+  transition: opacity 0.5s ease-out;
+}
+.v-leave-active {
+  transition: opacity 0.2s ease-in;
+}
+
+.v-enter,
+.v-enter-from,
+.v-leave,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
