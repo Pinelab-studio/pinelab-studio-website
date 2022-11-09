@@ -18,7 +18,7 @@
               <!-- form message -->
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <input name="email" class="input is-normal bordered" type="email" placeholder="Je emailadres">
+                  <input name="email" class="input is-normal bordered" type="email" placeholder="Je emailadres" required>
                 </div>
                 <div class="column is-12 form-message-bots">
                   <textarea type="text" name="_gotcha" placeholder="Message"/>

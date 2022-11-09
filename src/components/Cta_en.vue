@@ -12,7 +12,7 @@
               <!-- form message -->
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <input name="email" class="input is-normal bordered" type="text" placeholder="Your emailaddress">
+                  <input name="email" class="input is-normal bordered" type="text" placeholder="Your emailaddress" required>
                 </div>
                 <div class="column is-12">
                   <textarea class="textarea  bordered" name="message" :value="formMessage" style="display:none"></textarea>
