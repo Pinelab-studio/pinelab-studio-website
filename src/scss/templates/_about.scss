@@ -2,9 +2,10 @@
 	i{
 		font-size: 50px;
 	}
-	a{
-		color: $secondary;
+	a {
+		color: $primary;
 		font-weight: 400;
+		text-decoration: underline;
 	}
 	.icon{
 		margin-top: -7px;

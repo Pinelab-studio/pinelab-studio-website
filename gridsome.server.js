@@ -4,7 +4,7 @@ module.exports = async function (api) {
 
     const global = {
       email: 'martijn@pinelab.studio',
-      phone: '06 22 03 79 28',
+      phone: '+31622037928',
       vat: 'NL003062075B68',
       coc: 76205436,
       github: 'https://github.com/Pinelab-studio'

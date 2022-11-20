@@ -20,13 +20,13 @@
               <a class="navbar-link" @click="active=false" href="/#services">Services</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" @click="active=false" href="#cases">Cases</a>
+              <a class="navbar-link" @click="active=false" href="/#cases">Cases</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" @click="active=false" href="#about">Over ons</a>
+              <a class="navbar-link" @click="active=false" href="/#about">Over ons</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" @click="active=false" href="#pricing">Tarieven</a>
+              <a class="navbar-link" @click="active=false" href="/#pricing">Tarieven</a>
             </li>
 
           </template>
@@ -55,8 +55,8 @@
       <div class="container content has-text-centered  pb-6">
         <p>
           Pinelab •
-          <a :href="`mailto: ${$context.email}`">{{ $context.email }}</a> •
-          <a :href="`tel: ${$context.phone}`">{{ $context.phone }}</a> •
+          <a :href="`mailto:${$context.email}`">{{ $context.email }}</a> •
+          <a :href="`tel:${$context.phone}`">{{ $context.phone }}</a> •
           BTW {{ $context.vat }} •
           KVK {{ $context.coc }} •
           <a :href="$context.github" target="_blank">
@@ -64,7 +64,8 @@
                 icon="github"
                 size="is-small">
             </b-icon>
-          </a>
+          </a> •
+          <a href="https://pinelab-plugins.com" target="_blank">pinelab-plugins.com</a>
         </p>
       </div>
     </footer>

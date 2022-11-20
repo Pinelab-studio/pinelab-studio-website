@@ -149,8 +149,9 @@
                 Webshop development
               </h1>
               <p class="mb-6">
-                We bouwen complete custom webshops met Vendure, inclusief hosting, onderhoud en support. Voor een
-                complete webshop kunnen we je vooraf <span>kosteloos</span> vertellen wat het je gaat kosten.
+                We bouwen <span>complete custom webshops</span> met Vendure, inclusief hosting, onderhoud en support.
+                Voor een
+                complete webshop kunnen we je vooraf vertellen wat het je gaat kosten.
               </p>
             </div>
             <Cta
@@ -179,7 +180,7 @@
               <p class="mb-6">
                 Is je idee meer dan een webshop? Als <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
                                                         target="blank">
-                <span class="is-underlined">Vendure Silver Partner</span>
+                Vendure Silver Partner
               </a> kunnen we al jouw e-commerce wensen
                 realiseren. Benieuwd naar hoe wij je kunnen helpen? We leggen het je graag uit.
               </p>
@@ -251,12 +252,13 @@
           </div>
           <div class="column content" data-aos="fade-left">
             <h2> Cantastic.nl </h2>
-            <p> Een vernieuwde webshop voor art supply winkel Cantastic.nl</p>
+            <p> Voor art supply store Cantastic.nl hebben we een nieuw design gemaakt en de oude WooCommerce shop
+              overgezet naar een razendsnelle Vendure shop.</p>
             <ul>
-              <li><span>Geen klachten</span> over een langzame site meer van bezoekers.</li>
-              <li>Snelle en <span>SEO vriendelijke webshop</span> met Vendure en Vue.js</li>
-              <li>Verbeterde gebruiksvriendelijkheid met de color-picker voor spuitbussen</li>
-              <li><span>Order-pick integratie</span> met GoedGepickt, om sneller bestellingen af te handelen</li>
+              <li><span>Meer conversie</span> door snellere laadtijd</li>
+              <li><span>Meer bezoekers</span> doordat de nieuwe shop een betere SEO waarde heeft</li>
+              <li><span>Meer omzet</span> door de maatwerk color-picker voor spuitbussen</li>
+              <li><span>Tijdsbesparing</span> bij afhandeling, door de order-pick integratie met GoedGepickt</li>
             </ul>
           </div>
         </div>
@@ -266,28 +268,13 @@
             <p> Voor het e-book van Jet van Nieuwkerk maakten wij een webshop waar bezoekers het boek "Op!" konden
               bestellen.</p>
             <ul>
-              <li><span>Bestand tegen piekbelasting</span> door onze Google Cloud expertise</li>
-              <li>Een design dat overeenkomt met het design van het e-book</li>
+              <li><span>Bestand tegen piekbelasting</span>, dus geen gemiste bestellingen tijdens het drukke lanceermoment</li>
+              <li><span>Hogere conversie</span> door een checkout op maat voor e-books</li>
               <li><span>Geen handmatige handelingen:</span> klanten ontvangen automatisch het boek in hun email</li>
             </ul>
           </div>
           <div class="column" data-aos="fade-left">
             <img src="/images/op-mockup.png"/>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column" data-aos="fade-right">
-            <img src="/images/plugins-mockup.png"/>
-          </div>
-          <div class="column content" data-aos="fade-left">
-            <h2> Pinelab plugins </h2>
-            <p> Om de beste kwaliteit te garanderen bouwen en onderhouden we onze eigen plugins.</p>
-            <ul>
-              <li>Zo zijn we <span>onafhankelijk</span> van derde partijen</li>
-              <li>Een nieuwe koppeling nodig? Wij bouwen 'm gewoon</li>
-              <li>Bekijk al onze plugins op <a href="https://pinelab-plugins.com/" target="_blank"><span>pinelab-plugins.com</span></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -319,8 +306,7 @@
                 <li>Professionele oplossingen met meetbaar resultaat</li>
                 <li>9 jaar ervaring met het bouwen van e-commerce platformen</li>
                 <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                       target="blank">
-                  <span class="is-underlined">Vendure Silver Partner</span>
+                       target="blank">Vendure Silver Partner
                 </a></li>
               </ul>
             </div>
@@ -369,6 +355,10 @@
 
             </div>
           </template>
+        </div>
+
+        <div class="has-text-centered">
+          <g-link to="/contact/">Vraag op maat? Neem contact op</g-link>
         </div>
 
       </div>

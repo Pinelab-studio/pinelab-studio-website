@@ -10,7 +10,7 @@ $primary: #3DC685;
 $secondary: #FFC857;
 
 $text-strong: $text;
-$link: $secondary;
+$link: $primary;
 $info: $secondary;
 $success: $primary;
 $warning: $secondary;
@@ -168,11 +168,11 @@ h1 span,
 }
 
 p a {
-  color: $secondary;
+  color: $primary;
   text-decoration: underline;
 }
 a:hover {
-  color: $secondary;
+  color: $primary;
 }
 
 .rounded {
@@ -215,6 +215,10 @@ a:hover {
   width: 100%;
 }
 
+.button {
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -232,15 +236,15 @@ html {
 /* Animated CTA */
 .shiny {
   animation-name: shine;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.6), rgba(255,255,255,0));
-  background-position: -1500px 0;
+  background-position: -3000px 0;
   background-repeat: no-repeat;
 }
 
 @keyframes shine {
-  from {background-position: -1000px 0;}
-  to {background-position: 1000px 0;}
+  from {background-position: -3000px 0;}
+  to {background-position: 3000px 0;}
 }
