@@ -141,6 +141,11 @@ $link-focus-border: $primary;*/
 
 .navbar-link:focus {
   background-color: transparent !important;
+  text-decoration: none;
+}
+
+.navbar-link {
+  text-decoration: none;
 }
 
 .shadowed {
