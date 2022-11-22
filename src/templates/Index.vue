@@ -17,18 +17,20 @@
             <div class="block">
               <span class="is-uppercase text-sm letter-spacing ">DE WEBSHOP EXPERTS</span>
               <h1 class="my-4">
-                Doeltreffend ondernemen met een <span>professionele webshop</span>
+                <span>E-commerce oplossingen</span>
+                <br/>
+                voor de gevorderde ondernemer
               </h1>
               <p class="mb-6">
-                Wij bouwen een webshop die vlekkeloos werkt, zodat jij kan focussen op het strategisch runnen van je
-                onderneming.
+                Wordt het niet eens tijd voor een professionele webshop? Met een open en eerlijke samenwerking bouwen we
+                webshops waar je mee vooruit kan.
               </p>
 
               <Cta
                   form-message="Webshop check aanvragen - hero"
                   click-event-name="Hero contact"
-                  form-display-message="Laat je emailadres achter en we doen zo snel mogelijk de webshop check!"
-              >Gratis webshop check aanvragen
+                  form-display-message="Laat je emailadres achter en we doen zo snel mogelijk een check van je huidige webshop."
+              >Gratis webshop advies aanvragen
               </Cta>
 
             </div>
@@ -49,15 +51,15 @@
                :data-aos-delay="0"
           >
             <ReadMoreColumn
-                icon="shield-check"
-                title="UX"
+                icon="hand-heart"
+                title="Open en eerlijk"
             >
               <template #preview>
-                Verhoog je conversie met een gebruikerservaring die aansluit bij jouw onderneming.
+                Wist je dat 64% van gebouwde functionaliteit zelden of nooit gebruikt wordt?
               </template>
               <template #more>
-                Met onze best practices navigeren bezoekers vloeiend door een webshop in de stijl van jouw
-                onderneming. Dit verhoogt de conversie en voorkomt vragen bij je bezoekers.
+                Als we klakkeloos zouden bouwen wat je vraagt, betaal je dus 64% te veel. We denken met je mee en maken
+                resultaten meetbaar, zo bouwen we alleen zaken waar je wat aan hebt.
               </template>
             </ReadMoreColumn>
           </div>
@@ -67,16 +69,16 @@
                :data-aos-delay="100"
           >
             <ReadMoreColumn
-                icon="brush"
-                title="Customizable"
+                icon="speedometer"
+                title="Bespaar tijd"
             >
               <template #preview>
-                Bespaar tijd op handmatige handelingen door te koppelen met externe fulfilment platformen.
+                Wat is 2 keer zoveel omzet waard, als het je 4 keer zoveel tijd kost?
               </template>
               <template #more>
-                Met het Vendure e-commerce framework kunnen we alles bouwen en koppelen, zodat je tijd bespaart tijdens
-                het afhandelen
-                van bestellingen.
+                We streven naar zo veel mogelijk automatisering. We zorgen dat je bezoekers foutloos door je webshop
+                navigeren en koppelen met jouw favoriete verzendpartij. Zo zorgen we er samen
+                voor dat je 2 keer zo veel doet in de helft van de tijd.
               </template>
             </ReadMoreColumn>
           </div>
@@ -86,15 +88,15 @@
                :data-aos-delay="200"
           >
             <ReadMoreColumn
-                icon="account-multiple-check"
-                title="Support"
+                icon="lifebuoy"
+                title="Advies en ondersteuning"
             >
               <template #preview>
-                Vragen over je webshop? Er staat altijd iemand klaar om je te helpen.
+                Heb je vragen, of wil je gewoon advies? Dan staan we altijd klaar om je te helpen.
               </template>
               <template #more>
-                We zorgen pro-actief dat er niks mis gaat, maar soms heb je vragen, of wil je gewoon advies hebben wat
-                de best practices zijn. In dat geval is er altijd iemand om je te helpen.
+                Hoe zit het ook alweer met BTW buiten de EU? Kan ik een kortingscode aanmaken voor een specifieke groep
+                klanten? We staan altijd klaar om je advies te geven. Geen zorgen, we vertellen je graag hoe je het vervolgens zelf kan!
               </template>
             </ReadMoreColumn>
           </div>
@@ -268,7 +270,9 @@
             <p> Voor het e-book van Jet van Nieuwkerk maakten wij een webshop waar bezoekers het boek "Op!" konden
               bestellen.</p>
             <ul>
-              <li><span>Bestand tegen piekbelasting</span>, dus geen gemiste bestellingen tijdens het drukke lanceermoment</li>
+              <li><span>Bestand tegen piekbelasting</span>, dus geen gemiste bestellingen tijdens het drukke
+                lanceermoment
+              </li>
               <li><span>Hogere conversie</span> door een checkout op maat voor e-books</li>
               <li><span>Geen handmatige handelingen:</span> klanten ontvangen automatisch het boek in hun email</li>
             </ul>
