@@ -96,7 +96,8 @@
               </template>
               <template #more>
                 Hoe zit het ook alweer met BTW buiten de EU? Kan ik een kortingscode aanmaken voor een specifieke groep
-                klanten? We staan altijd klaar om je advies te geven. Geen zorgen, we vertellen je graag hoe je het vervolgens zelf kan!
+                klanten? We staan altijd klaar om je advies te geven. Geen zorgen, we vertellen je graag hoe je het
+                vervolgens zelf kan!
               </template>
             </ReadMoreColumn>
           </div>
@@ -296,12 +297,7 @@
                 Pinelab is opgericht door mij, Martijn. Samen met mijn ervaring als software developer en mijn netwerk
                 van
                 designers, marketeers en SEO experts <span>doen we 1 ding, en dat doen we als de beste</span>: we bouwen
-                moderne webshops die meetbaar resultaat opleveren voor de ondernemer.
-              </p>
-              <p>
-                Je krijgt bij ons altijd <span>eerlijk advies</span>: We zullen niet zomaar iets maken als je daar niets
-                aan hebt. Wij
-                hebben er net zo veel baat bij dat jouw onderneming een success is als jij zelf.
+                professionele en moderne e-commerce oplossingen.
               </p>
               <p>
                 Waarom zou je met ons samenwerken?
@@ -311,8 +307,25 @@
                 <li>9 jaar ervaring met het bouwen van e-commerce platformen</li>
                 <li><a href="https://www.vendure.io/cert-check/?JBLZUQFV"
                        target="blank">Vendure Silver Partner
-                </a></li>
+                </a> (Vendure is ons framework of choice als het gaat om e-commerce)
+                </li>
               </ul>
+              <h2 class="mb-4 mt-6">
+                Onze waarden
+              </h2>
+              <p>
+                <span>Integriteit</span> staat hoog in het vaandel: We vertellen je vooraf wat iets gaat kosten, zodat je weet wat je
+                kan verwachten. Geen stiekem gedoe of verstopte kosten.
+              </p>
+              <p>
+                We zijn <span>anti dark patterns</span>: We gaan je niet helpen bezoekers te misleiden. Kwaliteit en echte waarde
+                leveren op lange termijn toch veel meer op!
+              </p>
+              <p>
+                <span>We werken samen</span>: Wij zijn niet je bouwer en jij bent niet onze klant. We werken samen om je onderneming
+                succesvol te maken. Zo zorgen we dat je niet betaalt voor functionaliteit die toch niet gebruikt gaat
+                worden.
+              </p>
             </div>
           </div>
         </div>
@@ -453,19 +466,19 @@ export default {
           name: 'Starter',
           fixedPrice: 2000,
           yearlyPrice: 300,
-          features: ['Persoonlijke support', '100 bestellingen per maand', 'Onbeperkt aantal producten', 'Geen integraties']
+          features: ['Altijd advies en ondersteuning', '100 bestellingen per maand', 'Onbeperkt aantal producten', 'Geen integraties']
         },
         {
           name: 'Retailer',
           fixedPrice: 3500,
           yearlyPrice: 500,
-          features: ['Persoonlijke support', '300 bestellingen per maand', 'Onbeperkt aantal producten', '1 integratie']
+          features: ['Altijd advies en ondersteuning', '300 bestellingen per maand', 'Onbeperkt aantal producten', '1 integratie']
         },
         {
           name: 'Deluxe',
           fixedPrice: 5000,
           yearlyPrice: 700,
-          features: ['Persoonlijke support', '> 500 bestellingen per maand', 'Onbeperkt aantal producten', '3 integraties']
+          features: ['Altijd advies en ondersteuning', '> 500 bestellingen per maand', 'Onbeperkt aantal producten', '3 integraties']
         }
       ]
     }
