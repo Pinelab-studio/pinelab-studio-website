@@ -16,7 +16,7 @@
             </a>
           </template>
           <template #start id="navigation">
-            <li class="navbar-item">
+<!--            <li class="navbar-item">
               <a class="navbar-link" @click="active=false" href="/#services">Services</a>
             </li>
             <li class="navbar-item">
@@ -27,7 +27,7 @@
             </li>
             <li class="navbar-item">
               <a class="navbar-link" @click="active=false" href="/#pricing">Tarieven</a>
-            </li>
+            </li>-->
 
           </template>
 
@@ -43,12 +43,12 @@
     <slot></slot>
 
     <Consent
-        thank-you-message="Bedankt"
-        decline-text="Nee"
-        accept-text="Ja, geen probleem"
+        thank-you-message="Thanks!"
+        decline-text="No"
+        accept-text="Yes, no problem"
     >
       <h3 class="has-text-white"> Cookies </h3>
-      Vind je het goed dat we cookies gebruiken om het gebruik van onze site te meten?
+      We use cookies to measure our site's usagem, is that OK?
     </Consent>
 
     <footer class="footer">
@@ -57,8 +57,8 @@
           Pinelab •
           <a :href="`mailto:${$context.email}`">{{ $context.email }}</a> •
           <a :href="`tel:${$context.phone}`">{{ $context.phone }}</a> •
-          BTW {{ $context.vat }} •
-          KVK {{ $context.coc }} •
+          VAT {{ $context.vat }} •
+          Chamber of Commerce nr. {{ $context.coc }} •
           <a :href="$context.github" target="_blank">
             <b-icon
                 icon="github"

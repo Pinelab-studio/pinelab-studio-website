@@ -9,7 +9,7 @@
           </h1>
         </div>
         <p class="mb-6">
-          Stuur ons een bericht en we nemen zo snel mogelijk contact met je op.
+          Send us a message and we'll reach out to you as soon as possible.
         </p>
 
         <div class="columns is-multiline">
@@ -18,16 +18,16 @@
               <!-- form message -->
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <input name="email" class="input is-normal bordered" type="email" placeholder="Je emailadres" required>
+                  <input name="email" class="input is-normal bordered" type="email" placeholder="Your emailaddress" required>
                 </div>
                 <div class="column is-12 form-message-bots">
                   <textarea type="text" name="_gotcha" placeholder="Message"/>
                 </div>
                 <div class="column is-12">
-                  <textarea class="textarea bordered" name="real-message" placeholder="Je bericht"></textarea>
+                  <textarea class="textarea bordered" name="real-message" placeholder="Additional message"></textarea>
                 </div>
                 <div class="column is-12 has-text-right">
-                  <button class="button cta is-primary shiny" name="submit" type="submit">Verstuur</button>
+                  <button class="button cta is-primary shiny" name="submit" type="submit">Send</button>
                 </div>
               </div>
             </form>
@@ -37,18 +37,19 @@
             <div class="short-info bordered rounded">
               <ul class="list-unstyled">
                 <li>
-                  <h5>Telefoon</h5>
+                  <h5>Phonenumber</h5>
                   <a :href="`tel: ${$context.phone}`">{{ $context.phone }}</a>
                 </li>
                 <li>
-                  <h5>Email</h5>
+                  <h5>Emailaddress</h5>
                   <a :href="`mailto: ${$context.email}`">{{ $context.email }}</a>
                 </li>
                 <li>
-                  <h5>Adres</h5>
+                  <h5>Address</h5>
                   Cornelis Trooststraat 48<br/>
                   8932 BR<br/>
-                  Leeuwarden
+                  Leeuwarden <br/>
+                  The Netherlands
                 </li>
               </ul>
             </div>

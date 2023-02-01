@@ -10,11 +10,11 @@
                 404
               </h1>
               <p class="mb-6">
-                Deze pagina bestaat helaas niet...
+                Oops, this doesn't exist
               </p>
 
               <Cta link="/"
-              >Naar de homepagina
+              >Back to the homepage
               </Cta>
 
             </div>

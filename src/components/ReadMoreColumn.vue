@@ -17,7 +17,7 @@
           <slot name="more"/>
         </p>
       </transition>
-      <a @click="click()"> {{ readMore ? 'Toon minder &#9650;' : 'Lees meer' }} </a>
+      <a v-if="$slots.more"  @click="click()"> {{ readMore ? 'Show less &#9650;' : 'Read more' }} </a>
     </div>
   </div>
 </template>

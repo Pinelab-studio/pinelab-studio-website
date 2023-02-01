@@ -11,7 +11,7 @@ import VueGtag from "vue-gtag";
 import Consent from "./components/Consent";
 
 export default function (Vue, { router, head, isClient }) {
-    head.htmlAttrs = { lang: 'nl' }
+    head.htmlAttrs = { lang: 'en' }
     Vue.use(Buefy);
     Vue.use(checkView);
     Vue.component('Cta', Cta);

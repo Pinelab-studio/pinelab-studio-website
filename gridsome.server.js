@@ -19,14 +19,6 @@ module.exports = async function (api) {
     });
 
     createPage({
-      path: '/en/',
-      component: './src/templates/Index_en.vue',
-      context: {
-        ...global
-      },
-    });
-
-    createPage({
       path: '/contact/',
       component: './src/templates/Contact.vue',
       context: {
