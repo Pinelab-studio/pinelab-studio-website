@@ -19,12 +19,9 @@
                 e-commerce solutions at a fair price.
               </p>
 
-              <Cta
-                  form-message="Schedule a call"
-                  click-event-name="Intro - Schedule a call"
-                  form-display-message="Please leave your email address here and we'll reach out to you as soon as possible"
-              >Schedule a call
-              </Cta>
+              <CalendlyCta>
+                Schedule a call
+              </CalendlyCta>
 
             </div>
           </div>
@@ -68,7 +65,8 @@
                 title="Future proof"
             >
               <template #preview>
-                With our <strong>Vendure</strong> headless e-commerce approach, we build solutions that last, so you know
+                With our <strong>Vendure</strong> headless e-commerce approach, we build solutions that last, so you
+                know
                 our solutions
                 don’t expire any time soon!
               </template>
@@ -146,17 +144,14 @@
                 Complete solutions
               </h1>
               <p class="mb-6">
-                When we say complete, we mean complete: Blazing fast, scalable solutions including hosting, maintenance,
-                backend, frontend, everything. <br>
+                When we say complete, we mean complete: Blazing fast storefronts built on top of the Vendure headless
+                e-commerce framework, resulting in scalable solutions including hosting, maintenance, everything.<br>
                 All you need is an idea.
               </p>
             </div>
-            <Cta
-                form-message="Schedule a call"
-                click-event-name="Complete solutions - Schedule a call"
-                form-display-message="Please leave your email address here and we'll reach out to you as soon as possible"
-            >Schedule a call
-            </Cta>
+            <CalendlyCta>
+            Schedule a call
+            </CalendlyCta>
           </div>
           <div class="column" data-aos="fade-left">
             <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
@@ -178,17 +173,14 @@
               <p class="mb-6">
                 Looking to have us build a specific part of your project, or have us join forces with your
                 team? As <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                                  target="blank">
+                            target="blank">
                 Vendure Silver Partner
               </a> we are pretty sure we can help you.
               </p>
             </div>
-            <Cta
-                form-message="Schedule a call"
-                click-event-name="Custom development - Schedule a call"
-                form-display-message="Please leave your email address here and we'll reach out to you as soon as possible"
-            >Schedule a call
-            </Cta>
+            <CalendlyCta>
+              Schedule a call
+            </CalendlyCta>
           </div>
 
         </div>
@@ -395,9 +387,10 @@
 <script>
 import CountUp from "../components/CountUp";
 import AOS from "aos";
+import CalendlyCta from "../components/CalendlyCta";
 
 export default {
-  components: { CountUp },
+  components: { CalendlyCta, CountUp },
   mounted() {
     this.width = window.innerWidth;
     this.$nextTick(() => {

@@ -7,7 +7,8 @@ module.exports = async function (api) {
       phone: '+31622037928',
       vat: 'NL003062075B68',
       coc: 76205436,
-      github: 'https://github.com/Pinelab-studio'
+      github: 'https://github.com/Pinelab-studio',
+      calendly: 'https://calendly.com/pinelab-martijn/how-can-we-help'
     }
 
     createPage({
