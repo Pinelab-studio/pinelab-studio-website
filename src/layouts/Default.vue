@@ -16,6 +16,12 @@
             </a>
           </template>
           <template #start id="navigation">
+            <li class="navbar-item">
+              <a class="navbar-link" @click="active=false" href="/#services">Services</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" @click="active=false" href="/#pricing">Pricing</a>
+            </li>
 <!--            <li class="navbar-item">
               <a class="navbar-link" @click="active=false" href="/#services">Services</a>
             </li>
@@ -48,7 +54,7 @@
         accept-text="Yes, no problem"
     >
       <h3 class="has-text-white"> Cookies </h3>
-      We use cookies to measure our site's usagem, is that OK?
+      We use cookies to measure our site's usage, is that OK?
     </Consent>
 
     <footer class="footer">
