@@ -54,18 +54,17 @@
     <footer class="footer">
       <div class="container content has-text-centered  pb-6">
         <p>
-          Pinelab •
           <a :href="`mailto:${$context.email}`">{{ $context.email }}</a> •
-          <a :href="`tel:${$context.phone}`">{{ $context.phone }}</a> •
+          <a :href="$context.calendly">Schedule a call</a> •
           VAT {{ $context.vat }} •
-          Chamber of Commerce nr. {{ $context.coc }} •
+          CoC {{ $context.coc }} •
           <a :href="$context.github" target="_blank">
             <b-icon
                 icon="github"
                 size="is-small">
             </b-icon>
           </a> •
-          <a href="https://pinelab-plugins.com" target="_blank">pinelab-plugins.com</a>
+          <a href="https://regreener.earth/pinelab-studio" target="_blank">🌲 Trees planted</a>
         </p>
       </div>
     </footer>

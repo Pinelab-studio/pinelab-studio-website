@@ -14,7 +14,7 @@
               </h1>
               <p class="mb-6">
                 Welcome to Pinelab, an e-commerce software agency located in Leeuwarden, the Netherlands. We build
-                advanced e-commerce solutions.
+                advanced e-commerce solutions and are big believers of open source.
                 We don’t do basic stuff for as cheap as possible, we create advanced
                 e-commerce solutions at a fair price.
               </p>
@@ -65,7 +65,10 @@
                 title="Future proof"
             >
               <template #preview>
-                With our <strong>Vendure</strong> headless e-commerce approach, we build solutions that last, so you
+                As certified <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                   target="blank">
+                  Vendure Silver Partner
+                </a>, we build headless e-commerce solutions that last, so you
                 know
                 our solutions
                 don’t expire any time soon!
@@ -137,6 +140,9 @@
     <section id="services" class="banner">
       <div class="container">
 
+        <h2>Our services</h2>
+        <br>
+
         <div class="columns mb-6">
           <div class="column pr-6 mb-6">
             <div class="block" data-aos="fade-right">
@@ -150,7 +156,7 @@
               </p>
             </div>
             <CalendlyCta>
-            Schedule a call
+              Schedule a call
             </CalendlyCta>
           </div>
           <div class="column" data-aos="fade-left">
@@ -172,10 +178,9 @@
               </h1>
               <p class="mb-6">
                 Looking to have us build a specific part of your project, or have us join forces with your
-                team? As <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                            target="blank">
-                Vendure Silver Partner
-              </a> we are pretty sure we can help you.
+                team? Hire a <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                            target="blank">certified
+              </a> expert to help you out.
               </p>
             </div>
             <CalendlyCta>
@@ -185,12 +190,6 @@
 
         </div>
 
-      </div>
-    </section>
-
-    <section id="under-construction">
-      <div class="container has-text-centered mb-6">
-        <h4> We are still working on this site. Soon more!</h4>
       </div>
     </section>
 
@@ -381,6 +380,92 @@
         </section>
     -->
 
+    <section id="pricing" class="banner pt-0">
+      <div class="container">
+        <div class="block mb-6">
+          <h1 class="mb-4">
+            Pricing
+          </h1>
+          <p>
+            The prices below are just an indication, but it gives you an idea on the costs of building e-commerce
+            solutions with us.
+          </p>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
+                 data-aos="fade-up"
+                 :data-aos-delay="100"
+            >
+              <div class="price-header">
+                <span class="is-uppercase letter-spacing h5">Plugin <br> <br></span>
+                <h2><span>€4900</span></h2>
+                <!--                  <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>-->
+              </div>
+              <div class="price-body flex-grow p-2">
+                <br/>
+                <ul class="list-unstyled mb-0">
+                  <li>This is the price of an average plugin. Checkout
+                    <a href="https://pinelab-plugins.com" target="_blank">
+                      these plugins</a> we've already built
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
+                 data-aos="fade-up"
+                 :data-aos-delay="200"
+            >
+              <div class="price-header">
+                <span class="is-uppercase letter-spacing h5">Complete <br> solution</span>
+                <h2><span>€6900</span></h2>
+                <!--                  <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>-->
+              </div>
+              <div class="price-body flex-grow p-2">
+                <br/>
+                <ul class="list-unstyled mb-0">
+                  <li>This is the average price of a complete webshop, with custom storefronts and off the shelf
+                    plugins.
+                  </li>
+<!--                  TODO <li>Pick your maintenance plan here</li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
+                 data-aos="fade-up"
+                 :data-aos-delay="400"
+            >
+              <div class="price-header">
+                <span class="is-uppercase letter-spacing h5">Hourly <br> rate</span>
+                <h2><span>€110</span></h2>
+              </div>
+              <div class="price-body flex-grow p-2">
+                <br/>
+                <ul class="list-unstyled mb-0">
+                  <li>The rate we charge per hour when you decide to use our Vendure expertise
+                  </li>
+                  <!--                  TODO checkout these deals for solution maintenance and plugin maintenance
+                  <li>Pick your maintenance plan here</li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="under-construction">
+      <div class="container has-text-centered mb-6">
+        <h4> We are still working on this site. Soon more!</h4>
+      </div>
+    </section>
+
   </Layout>
 </template>
 
@@ -462,26 +547,6 @@ export default {
           message: `We've been using Pinelab's plugins for about a month now and they are <span>the real deal</span>. They are some of the most useful and advanced extensions for the Vendure ecosystem yet.`
         },
       ],
-      pricings: [
-        {
-          name: 'Starter',
-          fixedPrice: 2000,
-          yearlyPrice: 300,
-          features: ['Altijd advies en ondersteuning', '100 bestellingen per maand', 'Onbeperkt aantal producten', 'Geen integraties']
-        },
-        {
-          name: 'Retailer',
-          fixedPrice: 3500,
-          yearlyPrice: 500,
-          features: ['Altijd advies en ondersteuning', '300 bestellingen per maand', 'Onbeperkt aantal producten', '1 integratie']
-        },
-        {
-          name: 'Deluxe',
-          fixedPrice: 5000,
-          yearlyPrice: 700,
-          features: ['Altijd advies en ondersteuning', '> 500 bestellingen per maand', 'Onbeperkt aantal producten', '3 integraties']
-        }
-      ]
     }
   }
 };
@@ -513,9 +578,7 @@ export default {
   flex-grow: 1;
 }
 
-.pinetrees {
-  background-image: url("/images/pinetrees.jpg");
-  object-fit: cover;
+.pricing-block {
   height: 100%;
 }
 </style>

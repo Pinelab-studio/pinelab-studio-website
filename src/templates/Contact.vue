@@ -37,8 +37,8 @@
             <div class="short-info bordered rounded">
               <ul class="list-unstyled">
                 <li>
-                  <h5>Phonenumber</h5>
-                  <a :href="`tel: ${$context.phone}`">{{ $context.phone }}</a>
+                  <h5>Let's meet</h5>
+                  <a :href="$context.calendly">Schedule a call</a>
                 </li>
                 <li>
                   <h5>Emailaddress</h5>
