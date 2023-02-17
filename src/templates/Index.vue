@@ -457,6 +457,14 @@
           </div>
         </div>
 
+        <div class="container has-text-centered my-6">
+          <p> Need a more detailed estimate? Get in touch!</p>
+          <br/>
+          <CalendlyCta>
+            Schedule a call
+          </CalendlyCta>
+        </div>
+
       </div>
     </section>
 
