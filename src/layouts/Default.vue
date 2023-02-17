@@ -71,7 +71,7 @@
             </b-icon>
           </a>
           • <a href="https://regreener.earth/pinelab-studio" target="_blank">🌲 Trees planted</a>
-          • <a href="/algemene-voorwaarden.pdf" target="_blank">Terms and Conditions</a>
+          • <a href="/toc.pdf" target="_blank">Terms and Conditions</a>
         </p>
       </div>
     </footer>
