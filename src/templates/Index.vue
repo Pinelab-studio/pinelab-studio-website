@@ -13,7 +13,7 @@
                 software
               </h1>
               <p class="mb-6">
-                Welcome to Pinelab, an e-commerce software agency located in Leeuwarden, the Netherlands. We build
+                Welcome to Pinelab, a Dutch e-commerce software agency. We build
                 advanced e-commerce solutions and are big believers of open source.
                 We don’t do basic stuff for as cheap as possible, we create advanced
                 e-commerce solutions at a fair price.
