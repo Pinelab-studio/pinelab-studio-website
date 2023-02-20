@@ -18,6 +18,14 @@ module.exports = async function (api) {
         ...global
       },
     });
+    
+    createPage({
+      path: '/maintenance-pricing/',
+      component: './src/templates/Maintenance.vue',
+      context: {
+        ...global
+      },
+    });
 
     createPage({
       path: '/contact/',

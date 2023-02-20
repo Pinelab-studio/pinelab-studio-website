@@ -1,33 +1,40 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section id="value-proposition" class="banner is-flex is-align-items-center pt-6 mt-90">
+    <section
+      id="value-proposition"
+      class="banner is-flex is-align-items-center pt-6 mt-90"
+    >
       <div class="container">
         <div class="columns">
           <div class="column is-7-widescreen is-6-desktop pr-6">
             <div class="block">
-              <span class="is-uppercase text-sm letter-spacing ">E-COMMERCE SOFTWARE CREATORS</span>
+              <span class="is-uppercase text-sm letter-spacing "
+                >E-COMMERCE SOFTWARE CREATORS</span
+              >
               <h1 class="my-4">
-                We build advanced <br>
+                We build advanced <br />
                 <span>e-commerce</span>
                 software
               </h1>
               <p class="mb-6">
                 Welcome to Pinelab, a Dutch e-commerce software agency. We build
-                advanced e-commerce solutions and are big believers of open source.
-                We don’t do basic stuff for as cheap as possible, we create advanced
-                e-commerce solutions at a fair price.
+                advanced e-commerce solutions and are big believers of open
+                source. We don’t do basic stuff for as cheap as possible, we
+                create advanced e-commerce solutions at a fair price.
               </p>
 
               <CalendlyCta>
                 Schedule a call
               </CalendlyCta>
-
             </div>
           </div>
           <div class="column is-hidden-mobile is-hidden-tablet-only">
-            <img src="/images/martijn-square.jpeg" alt="Martijn van Pinelab"
-                 class="rounded cover"/>
+            <img
+              src="/images/martijn-square.jpeg"
+              alt="Martijn van Pinelab"
+              class="rounded cover"
+            />
           </div>
         </div>
       </div>
@@ -36,64 +43,46 @@
     <section id="how" class="section about" style="padding-top: 50px;">
       <div class="container">
         <div class="columns">
-          <div class="column is-4"
-               data-aos="fade-up"
-               :data-aos-delay="0"
-          >
-            <ReadMoreColumn
-                icon="hand-heart"
-                title="Opinionated"
-            >
+          <div class="column is-4" data-aos="fade-up" :data-aos-delay="0">
+            <ReadMoreColumn icon="hand-heart" title="Opinionated">
               <template #preview>
                 Did you know 64% of built features are never used?
-                <br>
-                <br>
-                We help you decide on the right things to build, instead of just building everything you ask us.
-
+                <br />
+                <br />
+                We help you decide on the right things to build, instead of just
+                building everything you ask us.
               </template>
-              <template #more>
-              </template>
+              <template #more> </template>
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4"
-               data-aos="fade-up"
-               :data-aos-delay="100"
-          >
-            <ReadMoreColumn
-                icon="rocket-launch"
-                title="Future proof"
-            >
+          <div class="column is-4" data-aos="fade-up" :data-aos-delay="100">
+            <ReadMoreColumn icon="rocket-launch" title="Future proof">
               <template #preview>
-                As certified <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                   target="blank">
-                  Vendure Silver Partner
-                </a>, we build headless e-commerce solutions that last, so you
-                know
-                our solutions
-                don’t expire any time soon!
+                As certified
+                <a
+                  href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                  target="blank"
+                >
+                  Vendure Silver Partner </a
+                >, we build headless e-commerce solutions that last, so you know
+                our solutions don’t expire any time soon!
               </template>
-              <template #more>
-              </template>
+              <template #more> </template>
             </ReadMoreColumn>
           </div>
 
-          <div class="column is-4"
-               data-aos="fade-up"
-               :data-aos-delay="200"
-          >
-            <ReadMoreColumn
-                icon="lifebuoy"
-                title="We know things"
-            >
+          <div class="column is-4" data-aos="fade-up" :data-aos-delay="200">
+            <ReadMoreColumn icon="lifebuoy" title="We know things">
               <template #preview>
-                We have experience building e-commerce solutions and running online businesses.
-                <br>
-                <br>
-                We will guide you in your quest and be there for you whenever you want to know more.
+                We have experience building e-commerce solutions and running
+                online businesses.
+                <br />
+                <br />
+                We will guide you in your quest and be there for you whenever
+                you want to know more.
               </template>
-              <template #more>
-              </template>
+              <template #more> </template>
             </ReadMoreColumn>
           </div>
         </div>
@@ -107,8 +96,8 @@
             <div class="counter-item has-text-centered">
               <h2 class="mb-0">
                 <span class="counter-stat font-weight-bold">
-                <CountUp value="9"/>
-              </span>
+                  <CountUp value="9" />
+                </span>
               </h2>
               <p>Years of experience</p>
             </div>
@@ -117,8 +106,8 @@
             <div class="counter-item has-text-centered">
               <h2 class="mb-0">
                 <span class="counter-stat font-weight-bold">
-                <CountUp value="21"/>
-              </span>
+                  <CountUp value="21" />
+                </span>
               </h2>
               <p>Plugins build</p>
             </div>
@@ -127,8 +116,8 @@
             <div class="counter-item has-text-centered">
               <h2 class="mb-0">
                 <span class="counter-stat font-weight-bold">
-                <CountUp value="230"/>k +
-              </span>
+                  <CountUp value="230" />k +
+                </span>
               </h2>
               <p>Wordlwide customers served</p>
             </div>
@@ -139,9 +128,8 @@
 
     <section id="services" class="banner">
       <div class="container">
-
         <h2>Our services</h2>
-        <br>
+        <br />
 
         <div class="columns mb-6">
           <div class="column pr-6 mb-6">
@@ -150,8 +138,10 @@
                 Complete solutions
               </h1>
               <p class="mb-6">
-                When we say complete, we mean complete: Blazing fast storefronts built on top of the Vendure headless
-                e-commerce framework, resulting in scalable solutions including hosting, maintenance, everything.<br>
+                When we say complete, we mean complete: Blazing fast storefronts
+                built on top of the Vendure headless e-commerce framework,
+                resulting in scalable solutions including hosting, maintenance,
+                everything.<br />
                 All you need is an idea.
               </p>
             </div>
@@ -160,16 +150,21 @@
             </CalendlyCta>
           </div>
           <div class="column" data-aos="fade-left">
-            <img src="/images/vendure-silver-partner.jpg" alt="Officieel Silver Partner!"
-                 class="rounded cover"/>
+            <img
+              src="/images/vendure-silver-partner.jpg"
+              alt="Officieel Silver Partner!"
+              class="rounded cover"
+            />
           </div>
         </div>
 
         <div class="columns">
           <div class="column mb-6" data-aos="fade-right">
             <img
-                src="/images/martijn.jpeg" alt="Martijn van Pinelab"
-                class="rounded cover"/>
+              src="/images/martijn.jpeg"
+              alt="Martijn van Pinelab"
+              class="rounded cover"
+            />
           </div>
           <div class="column pl-6 mb-6">
             <div class="block" data-aos="fade-left">
@@ -177,19 +172,21 @@
                 Custom development
               </h1>
               <p class="mb-6">
-                Looking to have us build a specific part of your project, or have us join forces with your
-                team? Hire a <a href="https://www.vendure.io/cert-check/?JBLZUQFV"
-                            target="blank">certified
-              </a> expert to help you out.
+                Looking to have us build a specific part of your project, or
+                have us join forces with your team? Hire a
+                <a
+                  href="https://www.vendure.io/cert-check/?JBLZUQFV"
+                  target="blank"
+                  >certified
+                </a>
+                expert to help you out.
               </p>
             </div>
             <CalendlyCta>
               Schedule a call
             </CalendlyCta>
           </div>
-
         </div>
-
       </div>
     </section>
 
@@ -387,70 +384,86 @@
             Pricing
           </h1>
           <p>
-            The prices below are just an indication, but it gives you an idea on the costs of building e-commerce
-            solutions with us.
+            The prices below are just an indication, but it gives you an idea on
+            the costs of building e-commerce solutions with us.
           </p>
         </div>
 
         <div class="columns">
           <div class="column has-text-centered">
-            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
-                 data-aos="fade-up"
-                 :data-aos-delay="100"
+            <div
+              class="pricing-block card has-text-centered rounded bordered flex-parent"
+              data-aos="fade-up"
+              :data-aos-delay="100"
             >
               <div class="price-header">
-                <span class="is-uppercase letter-spacing h5">Plugin <br> <br></span>
+                <span class="is-uppercase letter-spacing h5"
+                  >Plugin <br />
+                  <br
+                /></span>
                 <h2><span>€4900</span></h2>
                 <!--                  <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>-->
               </div>
               <div class="price-body flex-grow p-2">
-                <br/>
+                <br />
                 <ul class="list-unstyled mb-0">
-                  <li>This is the price of an average plugin. Checkout
+                  <li>
+                    This is the price of an average plugin. Checkout
                     <a href="https://pinelab-plugins.com" target="_blank">
-                      these plugins</a> we've already built
+                      these plugins</a
+                    >
+                    we've already built
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="column has-text-centered">
-            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
-                 data-aos="fade-up"
-                 :data-aos-delay="200"
+            <div
+              class="pricing-block card has-text-centered rounded bordered flex-parent"
+              data-aos="fade-up"
+              :data-aos-delay="200"
             >
               <div class="price-header">
-                <span class="is-uppercase letter-spacing h5">Complete <br> solution</span>
+                <span class="is-uppercase letter-spacing h5"
+                  >Complete <br />
+                  solution</span
+                >
                 <h2><span>€6900</span></h2>
                 <!--                  <h6 class="text-muted">+ €{{ pricing.yearlyPrice }} jaarlijks</h6>-->
               </div>
               <div class="price-body flex-grow p-2">
-                <br/>
+                <br />
                 <ul class="list-unstyled mb-0">
-                  <li>This is the average price of a complete webshop, with custom storefronts and off the shelf
-                    plugins.
+                  <li>
+                    This is the average price of a complete webshop, with custom
+                    storefronts and off the shelf plugins.
                   </li>
-<!--                  TODO <li>Pick your maintenance plan here</li>-->
+                  <li>Checkout <g-link to="/maintenance-pricing/">our maintenance plans</g-link></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="column has-text-centered">
-            <div class="pricing-block card has-text-centered rounded bordered flex-parent"
-                 data-aos="fade-up"
-                 :data-aos-delay="400"
+            <div
+              class="pricing-block card has-text-centered rounded bordered flex-parent"
+              data-aos="fade-up"
+              :data-aos-delay="400"
             >
               <div class="price-header">
-                <span class="is-uppercase letter-spacing h5">Hourly <br> rate</span>
+                <span class="is-uppercase letter-spacing h5"
+                  >Hourly <br />
+                  rate</span
+                >
                 <h2><span>€110</span></h2>
               </div>
               <div class="price-body flex-grow p-2">
-                <br/>
+                <br />
                 <ul class="list-unstyled mb-0">
-                  <li>The rate we charge per hour when you decide to use our Vendure expertise
+                  <li>
+                    The rate we charge per hour when you decide to use our
+                    Vendure expertise
                   </li>
-                  <!--                  TODO checkout these deals for solution maintenance and plugin maintenance
-                  <li>Pick your maintenance plan here</li>-->
                 </ul>
               </div>
             </div>
@@ -458,22 +471,20 @@
         </div>
 
         <div class="container has-text-centered my-6">
-          <p> Need a more detailed estimate? Get in touch!</p>
-          <br/>
+          <p>Need a more detailed estimate? Get in touch!</p>
+          <br />
           <CalendlyCta>
             Schedule a call
           </CalendlyCta>
         </div>
-
       </div>
     </section>
 
     <section id="under-construction">
       <div class="container has-text-centered mb-6">
-        <h4> We are still working on this site. Soon more!</h4>
+        <h4>We are still working on this site. Soon more!</h4>
       </div>
     </section>
-
   </Layout>
 </template>
 
@@ -487,32 +498,37 @@ export default {
   mounted() {
     this.width = window.innerWidth;
     this.$nextTick(() => {
-      window.addEventListener('resize', () => this.width = window.innerWidth);
+      window.addEventListener("resize", () => (this.width = window.innerWidth));
     });
     AOS.init({
       duration: 400,
       easing: "ease-out-quad",
-      anchorPlacement: 'top',
-      startEvent: 'load',
+      anchorPlacement: "top",
+      startEvent: "load",
     });
   },
   metaInfo() {
-    const title = 'Pinelab e-commerce experts';
-    const description = 'Professionele webshops en e-commerce oplossingen voor de gevorderde ondernemer';
+    const title = "Pinelab e-commerce experts";
+    const description =
+      "Professionele webshops en e-commerce oplossingen voor de gevorderde ondernemer";
     return {
       title,
       meta: [
-        { key: 'title', name: 'title', content: title },
-        { key: 'description', name: 'description', content: description },
-        { key: 'og:title', name: 'og:title', content: title },
+        { key: "title", name: "title", content: title },
+        { key: "description", name: "description", content: description },
+        { key: "og:title", name: "og:title", content: title },
         {
-          key: 'og:description',
-          name: 'og:description',
+          key: "og:description",
+          name: "og:description",
           content: description,
         },
-        { key: 'og:image', name: 'og:image', content: 'https://pinelab.studio/images/vendure-silver-partner.jpg' },
-        { key: 'og:type', name: 'og:type', content: 'website' },
-        { key: 'og:url', name: 'og:url', content: 'https://pinelab.studio/' },
+        {
+          key: "og:image",
+          name: "og:image",
+          content: "https://pinelab.studio/images/vendure-silver-partner.jpg",
+        },
+        { key: "og:type", name: "og:type", content: "website" },
+        { key: "og:url", name: "og:url", content: "https://pinelab.studio/" },
       ],
     };
   },
@@ -521,42 +537,42 @@ export default {
       if (this.width < 768) {
         return 1;
       } else if (this.width < 1024) {
-        return 1.5
+        return 1.5;
       }
       return 2.5;
-    }
+    },
   },
   data() {
     return {
       width: 1200,
       reviews: [
         {
-          author: 'Frank Wasse',
-          company: 'Wormenkwekerij Wasse',
-          image: '/images/review/frank-wasse.jpg',
-          message: `Uiteindelijk de knoop doorgehakt en een nieuwe website laten maken door Pinelab. De nieuwe website is <span>10 keer sneller en stabieler</span> dan mijn oude WooCommerce website! Dat had ik veel eerder moeten doen.`
+          author: "Frank Wasse",
+          company: "Wormenkwekerij Wasse",
+          image: "/images/review/frank-wasse.jpg",
+          message: `Uiteindelijk de knoop doorgehakt en een nieuwe website laten maken door Pinelab. De nieuwe website is <span>10 keer sneller en stabieler</span> dan mijn oude WooCommerce website! Dat had ik veel eerder moeten doen.`,
         },
         {
-          author: 'Amadeus',
-          company: 'Torwell GmbH',
-          image: '/images/review/amadeus.jpeg',
-          message: `Martijn from Pinelab is a very skilled and professional software developer with <span>tremendous experience in both architecture and implementation</span> level which makes him a perfect match being an external consultant.`
+          author: "Amadeus",
+          company: "Torwell GmbH",
+          image: "/images/review/amadeus.jpeg",
+          message: `Martijn from Pinelab is a very skilled and professional software developer with <span>tremendous experience in both architecture and implementation</span> level which makes him a perfect match being an external consultant.`,
         },
         {
-          author: 'Frank Masselink',
-          company: 'Cantastic.nl',
-          image: '/images/review/frank-masselink.jpg',
-          message: `Samen met Martijn van Pinelab hebben we de nieuwe Cantastic.nl webshop ontwikkeld. We zijn erg blij met het eindresultaat. De nieuwe webshop is mooi en werkt erg fijn!`
+          author: "Frank Masselink",
+          company: "Cantastic.nl",
+          image: "/images/review/frank-masselink.jpg",
+          message: `Samen met Martijn van Pinelab hebben we de nieuwe Cantastic.nl webshop ontwikkeld. We zijn erg blij met het eindresultaat. De nieuwe webshop is mooi en werkt erg fijn!`,
         },
         {
-          author: 'Timur Dogan',
-          company: 'Keeb.supply',
-          image: '/images/review/keeb.png',
-          message: `We've been using Pinelab's plugins for about a month now and they are <span>the real deal</span>. They are some of the most useful and advanced extensions for the Vendure ecosystem yet.`
+          author: "Timur Dogan",
+          company: "Keeb.supply",
+          image: "/images/review/keeb.png",
+          message: `We've been using Pinelab's plugins for about a month now and they are <span>the real deal</span>. They are some of the most useful and advanced extensions for the Vendure ecosystem yet.`,
         },
       ],
-    }
-  }
+    };
+  },
 };
 </script>
 <style>
