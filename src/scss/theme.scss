@@ -50,6 +50,10 @@ $navbar-item-active-background-color: $background;
 $table-background-color: $background;
 $table-row-hover-background-color: #313131;
 
+$button-background-color: $background;
+$radio-active-background-color: $primary;
+$button-active-color: $primary;
+
 
 // Lists and maps
 $custom-colors: null !default;
@@ -166,6 +170,7 @@ $link-focus-border: $primary;*/
 
 h1 span,
 #pricing h2 span,
+#maintenance-pricing h2,
 #value-proposition p span,
 #cases span,
 #services span,
