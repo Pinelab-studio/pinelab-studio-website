@@ -254,7 +254,7 @@ export default {
   data() {
     return {
       discount: false,
-      payPerNrOfMonths: 1,
+      payPerNrOfMonths: 12,
       nrOfOrders: 0.5,
       hostingPrice: 50,
       originalRates: {
@@ -281,6 +281,7 @@ export default {
       this.hourlyRates.pro = pro;
       this.discount = true;
     }
+    this.nrOfOrders = Number(this.$route.query.orders || 0.5);
   },
   computed: {
     billingLabel() {
