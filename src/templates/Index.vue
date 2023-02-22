@@ -10,7 +10,7 @@
           <div class="column is-7-widescreen is-6-desktop pr-6">
             <div class="block">
               <span class="is-uppercase text-sm letter-spacing "
-                >E-COMMERCE SOFTWARE CREATORS</span
+                >MAKE THE WORLD A BETTER PLACE THROUGH OPEN SOURCE</span
               >
               <h1 class="my-4">
                 We build advanced <br />
