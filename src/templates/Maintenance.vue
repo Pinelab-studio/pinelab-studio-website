@@ -259,13 +259,13 @@ export default {
       hostingPrice: 50,
       originalRates: {
         basic: 110,
-        intermediate: 100,
-        pro: 90,
+        intermediate: 105,
+        pro: 100,
       },
       hourlyRates: {
         basic: 110,
-        intermediate: 100,
-        pro: 90,
+        intermediate: 105,
+        pro: 100,
       },
     };
   },
