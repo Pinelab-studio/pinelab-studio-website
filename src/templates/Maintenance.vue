@@ -123,8 +123,8 @@
                     >
                   </th>
                   <td>❌</td>
-                  <td><strong>8 hours</strong></td>
                   <td><strong>16 hours</strong></td>
+                  <td><strong>32 hours</strong></td>
                 </tr>
                 <tr>
                   <th>
@@ -292,24 +292,24 @@ export default {
     },
     intermediatePrice() {
       return (
-        (this.hostingPrice + this.hourlyRates.intermediate * 8) *
+        (this.hostingPrice + this.hourlyRates.intermediate * 16) *
         this.payPerNrOfMonths
       );
     },
         originalIntermediatePrice() {
       return (
-        (this.hostingPrice + this.originalRates.intermediate * 8) *
+        (this.hostingPrice + this.originalRates.intermediate * 16) *
         this.payPerNrOfMonths
       );
     },
     proPrice() {
       return (
-        (this.hostingPrice + this.hourlyRates.pro * 16) * this.payPerNrOfMonths
+        (this.hostingPrice + this.hourlyRates.pro * 32) * this.payPerNrOfMonths
       );
     },
         originalProPrice() {
       return (
-        (this.hostingPrice + this.originalRates.pro * 16) * this.payPerNrOfMonths
+        (this.hostingPrice + this.originalRates.pro * 32) * this.payPerNrOfMonths
       );
     },
   },
