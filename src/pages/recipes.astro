@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EntriesOne from "@/components/blog/EntriesOne.astro";
+const allRecipes = await getCollection("recipes");
+---
+<BaseLayout>
+  <section>
+    <div
+      class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
+
+      <h2 class="text-purple-900 font-semibold text-3xl lg:text-7xl tracking-tight lg:text-balance">Vendure Recipes</h2>
+      <div class="my-12">
+      <p class="text-slate-500">Our Vendure Recipes are tutorials on how to implement bigger features, that require more than just installing a single plugin.
+        These recipes assume you have basic knowledge of Vendures concepts and know how to install plugins.
+      </p>
+      <p class="text-slate-500 mt-3">
+        These recipes are written by us and the community. If you have a recipe you would like to share, <a href="/#contact">get in touch!</a>
+      </p>
+    </div>
+
+      <div class="space-y-24">
+        {
+          allRecipes
+            .slice()
+            .map((post) => (
+              <EntriesOne
+                url={"/recipe/" + post.slug}
+                title={post.data.title}
+                description={post.data.description}
+                alt={post.data.title}
+                pubDate={post.data.pubDate.toString().slice(0, 10)}
+                author={post.data.author}
+                image={post.data.image.url}
+              />
+            ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
