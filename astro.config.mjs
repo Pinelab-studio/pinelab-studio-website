@@ -9,7 +9,7 @@ export default defineConfig({
   markdown: {
     drafts: true,
     remarkPlugins:[
-      [remarkToc, {maxDepth: 3}]
+      [remarkToc, {maxDepth: 2}]
     ],
     shikiConfig: {
       theme: "github-dark"
