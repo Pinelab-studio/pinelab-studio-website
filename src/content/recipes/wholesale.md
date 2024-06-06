@@ -86,4 +86,25 @@ A common use case for wholesale is to only allow products to be bough in bulk, f
 
 ## Revers tax charge
 
-// TODO: Not charge tax for wholesale customers outside NL?
+Our example wholesale shop is based in the Netherlands, selling to other business in the EU. In this case, customers outside of the Netherlands, but inside the EU region, do not have to pay taxes. 
+
+* When a valid VAT ID is given, and the customer is based outside of the NL inside the EU, no tax should be added to the order
+* We should use the [TaxLineCalculationStrategy](https://docs.vendure.io/reference/typescript-api/tax/tax-line-calculation-strategy/) for this.
+* If you are using the [Invoices Plugin](https://pinelab-plugins.com/plugin/vendure-plugin-invoices/), you should state on your invoice that no tax is calculated. Something in the lines of "Tax free under intra-community supply." should be on your invoice.
+
+
+## Deferred payments invoice
+
+It's common for wholesale shops to allow their customers to purchase an order, and pay for the order on a later point in time by invoice. For example, a school teacher orders art supplies and hands over the invoice to a manager to be paid. In this case, the order should be placed in Vendure, but needs to be tracked in an accountant platform for payment.
+
+We can create a dedicated payment method for this:
+* Create a [Payment Eligibility Checker](https://docs.vendure.io/user-guide/settings/shipping-methods/#shipping-eligibility-checker) that checks if the logged in customer is in the Wholesale group.
+* Create a [Payment Handler](https://docs.vendure.io/user-guide/settings/payment-methods/#payment-handler) named `Pay later`, that always transitions to `Settled`
+* Create a payment method in the Vendure admin UI, with the eligibility checker and handler mentioned above.
+
+On your storefront, you can use the following flow:
+* Get eligible payment methods
+* Whenever a customer is in the Wholesale group, the method `Pay later` will show up
+* When a customer selects that method, the storefront should call the [addPaymentToOrder](https://docs.vendure.io/guides/core-concepts/payment/#add-payment-to-order) mutation with the method `Pay later`, and the order will transition to Payment Settled.
+
+Keep in mind that if you push transactions to an external accounting platform, you might need to create a transaction as `Invoice sent` instead of `paid`, to keep track of what invoices are still open.
