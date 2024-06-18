@@ -46,11 +46,9 @@ Your implementation may differ, depending on what frontend framework you use, bu
 
 ## SEO
 
-Your wholesale storefront will have the same product and collection descriptions as your retail site, so search engines will see this as duplicate content. Which is not good! You should prevent your wholesale site from being indexed with one of the following methods:
+Your wholesale storefront's products and collections will have the same descriptions as your retail site, so search engines will see this as duplicate content. Which is not good! You should prevent your wholesale site from being indexed by pointing the canonical urls of each page to your retail website.
 
-// TODO
-* Canonical tags to the retail site on each page
-* Noindex headers?
+For example, on a product page of your wholesale site: `<link rel="canonical" href="https://my-retail-site.com/product/t-shirt" />`. This tells search engines that the original version of this page can be found at `https://my-retail-site.com/product/t-shirt`.
 
 ## Only allow wholesale customers
 
