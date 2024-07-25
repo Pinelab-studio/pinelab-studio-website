@@ -18,23 +18,22 @@
         </p>
       </div>
       <form
-      name="contact" netlify
+      name="contact-page" netlify
         class="lg:mt-0 mt-12 md:pl-12 md:border-l lg:pl-24 border-slate-200">
         <div class="space-y-2">
           <div>
             <label
-              for="work_email"
+              for="email"
               class="sr-only"
-              >Email Address</label
-            >
+              >Email Address
             <input
               type="email"
-              id="email"
               name="email"
               class="w-full focus:outline-none border focus:border-slate-200 py-3 appearance-none block border-transparent focus:bg-white bg-slate-50 px-3 rounded-xl text-purple-900"
               placeholder="Email"
               required
             />
+          </label>
           </div>
 
           <div>
@@ -44,11 +43,10 @@
               >Message</label
             >
             <textarea
-              id="project_details"
+              name="message"
               class="w-full focus:outline-none border focus:border-slate-200 py-3 appearance-none block border-transparent focus:bg-white bg-slate-50 px-3 rounded-xl text-purple-900"
               placeholder="What would you like to discuss?"
               rows="4"
-              name="message"
               required
             ></textarea>
           </div>
@@ -64,25 +62,4 @@
       </form>
     </div>
   </div>
-
-  <form name="contact2" method="POST" netlify>
-    <p>
-      <label>Your Name: <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <label>Your Role: <select name="role[]" multiple>
-        <option value="leader">Leader</option>
-        <option value="follower">Follower</option>
-      </select></label>
-    </p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
 </section>
