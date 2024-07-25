@@ -38,26 +38,18 @@ const footerSections = [
   },
 ];
 
-const qucikLinks = [
-  {
-    title: "Why Vendure",
-    link: "/#why-vendure",
-  },
+const quickLinks = [
   {
     title: "Pricing",
     link: "/#pricing",
   },
   {
+    title: "Recipes",
+    link: "/recipes/",
+  },
+  {
     title: "Contact us",
-    link: "/#contact-us",
-  },
-  {
-    title: "FAQs",
-    link: "/#faqs",
-  },
-  {
-    title: "Features",
-    link: "/#features",
+    link: "/contact/",
   },
 ];
 ---
@@ -79,10 +71,9 @@ const qucikLinks = [
         </a>
       </div>
       <div class="text-white xl:col-span-2">
-        <h3 class="mb-4">Qucik Links</h3>
         <ul>
           {
-            qucikLinks.map((link) => 
+            quickLinks.map((link) => 
               (<li class="font-extralight text-sm my-2">
                 <a href={link.link}>{link.title}</a>
               </li>)

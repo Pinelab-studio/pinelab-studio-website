@@ -24,25 +24,15 @@ const topFeatures = [
 
 const featureList = [
   {
-    title: "Prebuilt integrations",
+    title: "Features",
     items: [
-      "Embeddable checkout",
-      "Custom UI toolkit",
-      "Invoice support",
-      "Payment optimization",
-      "Data migration",
-      "Product monetization strategy",
-    ],
-  },
-  {
-    title: "Deployable checkouts",
-    items: [
-      "Embeddable checkout",
-      "Custom UI toolkit",
-      "Invoice support",
-      "Payment optimization",
-      "Data migration",
-      "Product monetization strategy",
+      "Configurable products",
+      "Blazing fast search",
+      "Customizable invoices",
+      "Multiple storefronts with a single admin",
+      "Integration with accounting platforms",
+      "Shipping label printing",
+      "A single UI to maintain option prices",
     ],
   },
 ];
@@ -53,54 +43,28 @@ const featureList = [
     class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24">
     <div class="max-w-xl">
       <h2 class="inline-flex items-center text-blue-600">
-        <span class="text-base font-medium tracking-tight">Feature</span>
+        <span class="text-base font-medium tracking-tight">colourgraphics.com</span>
       </h2>
 
       <h2
         class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
-        100% responsive emails
+        Showcase: Colour Graphics
       </h2>
       <p class="text-slate-500 mt-4 lg:text-balance">
-        We have tested our platform with over 100 email clients and it works on all of them we swear.
+        We've built the new website for one of UK's top digital printing companies, using Vendure and Astro.
       </p>
 
     </div>
-    <ul
-      role="list"
-      class="grid grid-cols-2 lg:grid-cols-4 gap-4 list-none lg:gap-6 mt-12">
-      {
-        topFeatures.map((item, index) => (
-          <li>
-            <div>
-              <div class="flex items-center justify-center size-8 text-blue-500 rounded-full bg-slate-100">
-                {index + 1}
-              </div>
-              <p class="mt-5 font-semibold text-purple-900">{item.title}</p>
-            </div>
-            <div class="mt-2 text-slate-500 text-sm">{item.description}</div>
-          </li>
-        ))
-      }
-    </ul>
 
-    <div class="grid grid-cols-1 items-start md:grid-cols-2 mt-12 lg:mt-24">
+    <div class="grid grid-cols-1 items-start md:grid-cols-2 mt-6 lg:mt-24">
       <div class="lg:pr-24 md:pr-12">
-        <h2
-          class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
-          Stunning layouts
-        </h2>
-        <p class="text-slate-500 mt-5">
-          Your implementation includes relevant deep dive workshops so we can
-          understand your requirements and create tailored integration guides
-          for your teams to build faster.
-        </p>
         <ul
           role="list"
-          class="list-none mt-12">
+          class="list-none">
           {
             featureList.map((feature) => (
               <li>
-                <p class="mt-12 font-semibold text-purple-900 text-2xl">
+                <p class="mt-0 font-semibold text-purple-900 text-2xl">
                   {feature.title}
                 </p>
                 <div class="mt-5">
@@ -127,5 +91,16 @@ const featureList = [
         />
       </div>
     </div>
+
+    <h2
+    class="text-purple-900 font-semibold tracking-tight lg:text-5xl mt-6 text-3xl">
+    More showcases?
+  </h2>
+    <p class="text-slate-500 mt-4 lg:text-balance">
+      We are busy building new stuff, so if you'd like to hear more about our projects 
+      <a href="/contact/" class="text-blue-600 hover:text-blue-500">
+      get in touch.
+      </a>
+    </p>
   </div>
 </section>
