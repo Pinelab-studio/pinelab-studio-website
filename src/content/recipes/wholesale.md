@@ -74,6 +74,8 @@ Customer groups are not exposed in the Shop API by default, so we use the [Publi
 
 Again, this differs depending on your storefront framework.
 
+Now that you have secured your frontend, you should also use the `isCustomerInGroupPaymentChecker` from the [Payment Extensions Plugin](https://pinelab-plugins.com/plugin/vendure-plugin-payment-extensions/) to secure your backend. This checker only allows adding payments to the order when a customer is in a specific group.
+
 ## Only allow bulk purchases
 
 A common use case for wholesale is to only allow products to be bough in bulk, for example, 'Spray can' can only be bought per 4 items, because they come in boxes of 4. To enable this, you can install the [Limit Variant Plugin](https://pinelab-plugins.com/plugin/vendure-plugin-limit-variant-per-order/):
