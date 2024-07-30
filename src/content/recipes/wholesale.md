@@ -78,11 +78,11 @@ Now that you have secured your frontend, you should also use the `isCustomerInGr
 
 ## Only allow bulk purchases
 
-A common use case for wholesale is to only allow products to be bough in bulk, for example, 'Spray can' can only be bought per 4 items, because they come in boxes of 4. To enable this, you can install the [Limit Variant Plugin](https://pinelab-plugins.com/plugin/vendure-plugin-limit-variant-per-order/):
+A common use case for wholesale is to only allow products to be bough in bulk, for example, 'Spray can' can only be bought per 4 items, because they come in boxes of 4. To enable this, you can install the [Limited Products Plugin](https://pinelab-plugins.com/plugin/vendure-plugin-limited-products/):
 
 1. Install the plugin
 2. Go to the product you want to restrict, and set 4 in the field `Multiple of per order`. The product can now only be bought in multiples of 4
-3. The field is available in the shop api under `productVariant.customFields.onlyAllowPer`. You should use this field on your storefront to limit any quantity input to use multiples of 4. The Vendure backend will throw an error if your storefront will try to add 5 to cart for example.
+3. The field is available in the shop api under `product.limitPurchasePerMultipleOf`. You should use this field on your storefront to limit any quantity input to use multiples of 4. The Vendure backend will throw an error if your storefront will try to add 5 to cart for example.
 
 ## Revers tax charge
 
