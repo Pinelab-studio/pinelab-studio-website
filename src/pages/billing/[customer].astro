@@ -1,0 +1,18 @@
+---
+import BillingOverview from "@/components/BillingOverview.vue";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { customer: "huidpraktijkshop.nl" } },
+    { params: { customer: "colourgraphics.com" } },
+    { params: { customer: "wormenkwekerijwasse.nl" } },
+  ];
+}
+
+const { customer } = Astro.params;
+console.log(customer)
+---
+<BaseLayout>
+  <BillingOverview client:only="vue" customer={customer}>
+</BaseLayout>
