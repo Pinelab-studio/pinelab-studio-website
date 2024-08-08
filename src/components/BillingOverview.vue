@@ -10,7 +10,9 @@
                         {{ customer.toUpperCase() }}
                     </h2>
                     <p class="text-slate-500 my-5 md:text-balance md:w-1/2 mx-auto">
-                        This data will not be available indefinitely. Please download it if you want to keep it.
+                        This data will not be available indefinitely. Please 
+                        <a href="#" class="text-blue-600 hover:text-blue-500 " @click="printCurrentPage()">Save as PDF</a>
+                         it if you want to keep it.
                     </p>
                 </div>
 
@@ -124,6 +126,10 @@ onMounted(() => {
     }
     console.log(month, secret)
 });
+
+function printCurrentPage() {
+    window.print();
+}
 
 /**
  * Get the current + past X months
