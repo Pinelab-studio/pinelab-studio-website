@@ -22,11 +22,14 @@
     "@astrojs/prism": "^3.0.0",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/vue": "^4.5.0",
+    "@headlessui/vue": "^1.7.22",
     "astro-devtool-breakpoints": "^0.3.0",
     "remark-toc": "^9.0.0",
     "sharp": "^0.33.3",
     "shiki": "^1.6.2",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "vue": "^3.4.36"
   }
 }

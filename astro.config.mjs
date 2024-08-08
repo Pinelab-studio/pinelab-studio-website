@@ -4,13 +4,15 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import remarkToc from 'remark-toc';
 
+import vue from "@astrojs/vue";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
     drafts: true,
-    remarkPlugins:[
-      [remarkToc, {maxDepth: 2}]
-    ],
+    remarkPlugins: [[remarkToc, {
+      maxDepth: 2
+    }]],
     shikiConfig: {
       theme: "github-dark"
     }
@@ -21,5 +23,9 @@ export default defineConfig({
     drafts: true
   },
   site: 'https://pinelab.studio',
-  integrations: [tailwind(), sitemap(), mdx()]
+  integrations: [tailwind(), sitemap({
+    filter: page => {
+      return page.path !== '/billing';
+    }
+  }), mdx(), vue()]
 });
