@@ -122,9 +122,9 @@ onMounted(() => {
     secret = urlSearchParams.get('k');
     month = parseInt(urlSearchParams.get('month'));
     if (!isNaN(month)) {
-        selectedMonth.value = availableMonths.find(m => m.nr === month) ?? availableMonths.at(-1);
+        selectedMonth.value = availableMonths.find(m => m.monthNr === month) ?? availableMonths.at(-1);
     }
-    console.log(month, secret)
+    console.log(selectedMonth.value.date, month)
 });
 
 function printCurrentPage() {
@@ -134,17 +134,16 @@ function printCurrentPage() {
 /**
  * Get the current + past X months
  */
-function getPastMonths(nrOfPreviousMonths: number): { name: string, nr: number }[] {
+function getPastMonths(nrOfPreviousMonths: number): { name: string, date: string, monthNr: number }[] {
     const currentDate = new Date();
     const months = [];
     const formatter = new Intl.DateTimeFormat('en-US', { month: 'long' });
 
     for (let i = 0; i < nrOfPreviousMonths; i++) {
         // Create a new date object for the month we are interested in
-        const date = new Date(currentDate.getFullYear(), currentDate.getMonth() - i, 1);
+        const date = new Date(currentDate.getFullYear(), currentDate.getMonth() - i, 2);
         const monthName = formatter.format(date);
-        const monthIndex = date.getMonth();
-        months.push({ nr: monthIndex + 1, name: monthName });
+        months.push({ date: date.toISOString().split('T')[0], name: monthName, monthNr: date.getMonth() + 1 });
     }
     return months.reverse();
 }

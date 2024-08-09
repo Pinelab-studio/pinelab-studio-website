@@ -1,12 +1,13 @@
 {
-  "name": "@lexington/spaziobianco",
+  "name": "@pinelab/website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "function": "node --loader ts-node/esm netlify/functions/toggl-report.mts"
   },
   "resolutions": {
     "string-width": "4.2.3"
@@ -15,7 +16,9 @@
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.12",
     "@types/alpinejs": "^3.13.10",
-    "astro": "^4.5.16"
+    "astro": "^4.5.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.2.4",
@@ -24,6 +27,7 @@
     "@astrojs/sitemap": "^3.1.2",
     "@astrojs/vue": "^4.5.0",
     "@headlessui/vue": "^1.7.22",
+    "@netlify/functions": "^2.8.1",
     "astro-devtool-breakpoints": "^0.3.0",
     "remark-toc": "^9.0.0",
     "sharp": "^0.33.3",
